@@ -1,17 +1,17 @@
 import React from "react";
 import {
-    Nav,
-    NavbarContainer,
-    NavLogo,
-    NavIcon,
-    MobileIcon,
-    NavMenu,
-    NavItem,
-    NavLinks,
-    NavItemBtn,
-    NavBtnLink,
-    Quick,
-  } from "./Navbar.elements";
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  NavIcon,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLinks,
+  NavItemBtn,
+  NavBtnLink,
+  Quick,
+} from "./Navbar.elements";
 
 const Navbar = () => {
   return (
@@ -22,18 +22,20 @@ const Navbar = () => {
             <NavLinks to='/'>HOME</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to='/portfolio'>포트폴리오</NavLinks>
+            <NavLinks to='portfolio'>포트폴리오</NavLinks>
           </NavItem>
           <NavItem>
             <NavLinks to='/'>콘텍트</NavLinks>
           </NavItem>
           <NavItem>
-          <Quick>
-            <NavLinks paddingcontrol black to='/'>^<br/>TOP</NavLinks>
+            <Quick>
+              <NavLinks paddingcontrol black to='/'>
+                ^<br />
+                TOP
+              </NavLinks>
             </Quick>
-            </NavItem>
+          </NavItem>
         </NavMenu>
-
       </NavbarContainer>
     </Nav>
   );

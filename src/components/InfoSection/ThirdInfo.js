@@ -11,8 +11,8 @@ import {
 
 const ThirdInfo = ({ img, alt }) => {
   return (
-    <InfoSec>
-      <Container>
+    <InfoSec id='portfolio'>
+      <Container >
         <InfoRow>
                   <InfoColumn>
                       <Test>sfsfsssfsf</Test>

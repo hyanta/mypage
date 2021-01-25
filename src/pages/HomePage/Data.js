@@ -36,3 +36,13 @@ export const homeObjThree = {
   img: require("../../images/bg01.jpg").default,
   alt: "bg",
 };
+
+export const SidebarName = {
+  img: require("../../images/sm01.jpg").default,
+  alt: "nopic",
+  img2: require("../../images/bm01.jpg").default,
+};
+
+export const Cssplus = {
+  plus: "opacity: 0",
+};
