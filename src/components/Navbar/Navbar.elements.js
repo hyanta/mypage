@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Container } from "../../globalStyles";
- 
+import {Link} from 'react-scroll'
+
 export const Nav = styled.nav`
-  background: #101522;
+  background: rgba(77,58,62, 0.7);
   height: 70px;
   display: flex;
   justify-content: center;
@@ -11,8 +12,9 @@ export const Nav = styled.nav`
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 1;
-
+  z-index: 3;
+  transition: 0.5s;
+  
   @media screen and (max-width: 960px) {
     height: 50px;
   }
@@ -32,7 +34,9 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin: 0 auto;
-
+      li:nth-child(4){
+         border:none;
+       }
   @media screen and (max-width: 960px) {
     display: flex;
     flex-direction: row;
@@ -52,10 +56,11 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   border-bottom: 4px solid transparent;
-
+  padding: 0 10px;
   &:hover {
     height: 70px;
-    border-bottom: 4px solid #00b0f4;
+    border-bottom: 4px solid #fff3cd;
+      
   }
 
   @media screen and (max-width: 960px) {
@@ -71,7 +76,8 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(Link)`
-  color: ${({black}) =>(black ? '#000' : ' #fff ')};
+  cursor: pointer;
+  color: ${({black}) =>(black ? '#fff2d0' : ' #fff ')};
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -80,10 +86,12 @@ export const NavLinks = styled(Link)`
   font-weight: 700;
   font-size: 24px;
   justify-content:center;
+ 
 
   &:hover {
-    color: #00b0f4;
+    color: #fff3cd;
     transition: all 0.3s ease;
+   
   }
 
   @media screen and (max-width: 960px) {
@@ -105,10 +113,11 @@ export const Quick = styled.div`
     bottom: 10px;
     width: 130px;
     height: 130px;
-  background-color:#00b0f4;
+  background-color:rgba(77,58,62);
 
   &:hover{
     color: #fff;
+   
   }
 
   @media screen and (max-width: 960px) {

@@ -5,12 +5,12 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   topLine: "안녕하세요",
-  headline: "저는 디자이너 입니다",
+  headline: "포트폴리오를모아놓았어요",
   description:
-    "여기는 웹디자인 포트폴리오 사이트 입니다 매력적인 UI를 만드는 프론트앤드 디자이너 입니다",
+    "개인 웹디자인 포트폴리오 사이트 입니다 프론트앤드 디자이너로써 나아가려고 합니다",
   buttonLabel: "Get Started",
   imgStart: "",
-  img: require("../../images/logo.jpg").default,
+  img: require("../../images/logo.png").default,
   alt: "Nologo",
   start: "",
 };
@@ -35,6 +35,10 @@ export const homeObjThree = {
   Subtitle: "여기에 무엇을 적으면 좋을까요",
   img: require("../../images/bg01.jpg").default,
   alt: "bg",
+  img1: require("../../images/ico.jpg").default,
+  img2: require("../../images/ico2.jpg").default,
+  img3: require("../../images/ico3.jpg").default,
+  img4: require("../../images/ico4.jpg").default,
 };
 
 export const SidebarName = {
@@ -43,6 +47,25 @@ export const SidebarName = {
   img2: require("../../images/bm01.jpg").default,
 };
 
-export const Cssplus = {
-  plus: "opacity: 0",
-};
+export const sliderImage = [
+  {
+    title: "First Slide",
+    description: "This is the First Slider of our Carousel",
+    img: require("../../images/sample").default,
+  },
+  {
+    title: "Second Slide",
+    description: "This is the Second Slider of our Carousel",
+    img: require("../../images/sample2").default,
+  },
+  {
+    title: "Third Slide",
+    defscription: "This is the Third Slider of our Carousel",
+    img: require("../../images/sample3").default,
+  },
+  {
+    title: "Fourth Slide",
+    defscription: "This is the Fourth Slider of our Carousel",
+    img: require("../../images/sample4").default,
+  },
+];

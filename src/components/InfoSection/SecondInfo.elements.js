@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InfoSec = styled.div`
   color: #fff;
   padding: 160px 0;
-  background: ${({ lightBg }) => (lightBg ? "#fff" : "#101522")};
+  background: ${({ lightBg }) => (lightBg ? "#fff" : "rgba(47,42,36)")};
 `;
 
 export const InfoRow = styled.div`
@@ -29,7 +29,6 @@ export const InfoColumn = styled.div`
 `;
 
 export const InfoColumnTwo = styled.div`
-
   margin-bottom: 15px;
   padding-right: 15px;
   padding-left: 15px;
@@ -45,11 +44,10 @@ export const InfoColumnTwo = styled.div`
 `;
 
 export const TextWrapper = styled.div`
- 
   text-align: ${({ switch2 }) => (switch2 ? "center" : "")};
   max-width: 540px;
   padding-top: 0;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 
   @media screen and (max-width: 768px) {
     padding-bottom: 65px;
@@ -57,9 +55,10 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#a9b3c1" : "#4B59F7")};
-  font-size: ${({middlesize})=>(middlesize ? '20px' : '40px')};
-  line-height: ${({height})=>(height ? '25px' : '20px')};
+  color: ${({ lightTopLine }) =>
+    lightTopLine ? "#a9b3c1" : "rgba(196,151,112)"};
+  font-size: ${({ middlesize }) => (middlesize ? "20px" : "40px")};
+  line-height: ${({ height }) => (height ? "25px" : "20px")};
   font-weight: 700;
   letter-spacing: 1.4px;
   margin-bottom: 35px;
@@ -70,15 +69,15 @@ export const Heading = styled.h1`
   font-size: ${({ fontsize }) => (fontsize ? "40px " : "80px")};
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#1c2237")};
+  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "rgba(196,151,112)")};
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
   margin-bottom: 35px;
   font-size: ${({ smallsize }) => (smallsize ? "20px " : "24px")};
   line-height: 24px;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#a9b3c1" : "#1c2237")};
+  color: ${({ lightTextDesc }) =>
+    lightTextDesc ? "#a9b3c1" : "rgba(176,123,79)"};
 `;
 
 export const ImgWrapper = styled.div`
@@ -94,4 +93,29 @@ export const Img = styled.img`
   vertical-align: middle;
   display: inline-block;
   max-height: 500px;
+`;
+
+export const ButtonSecond = styled.button`
+  border-radius: 4px;
+  background: ${({ primary }) => (primary ? "transparent" : "none")};
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? "30px 170px" : "10px 20px")};
+  color: rgba(181, 135, 75);
+  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  outline: none;
+  height: 60px;
+  cursor: pointer;
+  border: ${({ borderon }) =>
+    borderon ? "2px solid rgba(181, 135, 75)" : "none"};
+
+  &:hover {
+    transition: all 0.3s ease-out;
+    background: rgba(73, 50, 32);
+    background-color: ${({ primary }) =>
+      primary ? "#0467FB" : "rgba(73,50,32)"};
+  }
+
+  @media screen and (max-width: 960px) {
+    width: 100%;
+  }
 `;

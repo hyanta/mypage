@@ -4,17 +4,16 @@ import styled from "styled-components";
 import { animateScroll as scroll } from "react-scroll";
 
 const CircleWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  height: 200px;
-  background: #000;
+   display:flex;
+   justify-content:center;
+   flex-direction:column;
+   padding: 0 30px;
 `;
 
 const CircleIn = styled(Link)`
   width: 160px;
   height: 160px;
+   position: relative;
 `;
 
 const HoverBox = styled.div`
@@ -90,11 +89,11 @@ const Image = styled.img`
   width: 100%;
 `;
 
-const CircleTest = ({ plus }) => {
+const CircleTest = ({ img1 }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 2280) {
+    if (window.scrollY >= 1780) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -121,12 +120,13 @@ const CircleTest = ({ plus }) => {
           </Sspan>
           <CircleImageWrap>
             <Image
-              src={"http://nventertainment.net/img/main/minseo_img.jpg"}
+              src={img1}
               alt='none'
             />
           </CircleImageWrap>
-        </HoverBox>
+        </HoverBox>  
       </CircleIn>
+    글자 테스트
     </CircleWrapper>
   );
 };

@@ -26,7 +26,7 @@ const InfoSection = ({
   lightTextDesc,
 }) => {
   return (
-    <InfoSec>
+    <InfoSec id='home'>
       <Container>
         <InfoRow>
           <InfoColumn>
@@ -37,11 +37,11 @@ const InfoSection = ({
 
           <InfoColumn>
             <TextWrapper>
-              <TopLine>{topLine}</TopLine>
+              <TopLine lightTopLine>{topLine}</TopLine>
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
               <Link to='/'>
-                <Button big>{buttonLabel}</Button>
+                <Button borderon primary big>{buttonLabel}</Button>
               </Link>
             </TextWrapper>
           </InfoColumn>

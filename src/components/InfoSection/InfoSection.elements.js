@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const InfoSec = styled.div`
   color: #000;
   padding: 160px 0;
-  background: ${({ lightBg }) => (lightBg ? "#000" : "#101522")};
+  /* background: ${({ lightBg }) => (lightBg ? "#000" : "#101522")}; */
 `;
 
 export const InfoRow = styled.div`
@@ -12,6 +12,8 @@ export const InfoRow = styled.div`
   flex-wrap: wrap;
   align-items: center;
   flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
+
+
 `;
 
 export const InfoColumn = styled.div`

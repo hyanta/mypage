@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import {
   Nav,
   NavbarContainer,
@@ -14,22 +14,48 @@ import {
 } from "./Navbar.elements";
 
 const Navbar = () => {
+  const [background, setScrollNav] = useState();
+
+  const changeNav = () => {
+    if (window.scrollY >= 90) {
+      setScrollNav();
+    } else {
+      setScrollNav('none');
+    }
+  };
+
+  // const toggleHome = () => {
+  //   scroll.scrollToTop();
+  // };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+
+
   return (
-    <Nav>
+    <Nav style={{background}}>
       <NavbarContainer>
         <NavMenu>
           <NavItem>
-            <NavLinks to='/'>HOME</NavLinks>
+            <NavLinks to='home' smooth='true'>
+              HOME
+            </NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to='portfolio'>포트폴리오</NavLinks>
+            <NavLinks to='portfolio' smooth='true'>
+              포트폴리오
+            </NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to='/'>콘텍트</NavLinks>
+            <NavLinks to='contact' smooth='true'>
+              콘텍트
+            </NavLinks>
           </NavItem>
           <NavItem>
             <Quick>
-              <NavLinks paddingcontrol black to='/'>
+              <NavLinks paddingcontrol black to='home' smooth='true'>
                 ^<br />
                 TOP
               </NavLinks>

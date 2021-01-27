@@ -12,6 +12,7 @@ import {
   Img,
   ImgWrapper,
   InfoColumnTwo,
+  ButtonSecond,
 } from "./SecondInfo.elements";
 
 const SecondInfo = ({
@@ -25,14 +26,14 @@ const SecondInfo = ({
   subTitle2,
 }) => {
   return (
-    <InfoSec>
+    <InfoSec id="portfolio">
       <Container>
         <InfoRow>
           <InfoColumn>
             <TextWrapper switch2>
-              <Heading lightText>{headline}</Heading>
+              <Heading >{headline}</Heading>
               <TopLine>{topLine}</TopLine>
-              
+
               <Subtitle>{description}</Subtitle>
             </TextWrapper>
           </InfoColumn>
@@ -43,12 +44,18 @@ const SecondInfo = ({
           </InfoColumnTwo>
           <InfoColumnTwo>
             <TextWrapper>
-              <Heading lightText fontsize>{headtitle2}</Heading>
-              <TopLine lightTopLine middlesize height>{secondLine}</TopLine>
-              <Subtitle smallsize lightTextDesc>{subTitle2}</Subtitle>
+              <Heading  fontsize>
+                {headtitle2}
+              </Heading>
+              <TopLine  middlesize height>
+                {secondLine}
+              </TopLine>
+              <Subtitle smallsize >
+                {subTitle2}
+              </Subtitle>
             </TextWrapper>
             <Link to='/'>
-              <Button>어디로 이동하기</Button>
+              <ButtonSecond borderon>ADOBE</ButtonSecond>
             </Link>
           </InfoColumnTwo>
         </InfoRow>

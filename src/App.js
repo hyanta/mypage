@@ -6,6 +6,8 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './pages/HomePage/Home';
 import { Footer } from './components';
 import { Cssplus, SidebarName } from "./pages/HomePage/Data";
+import Bg from './components/BgVideo/Bg';
+ 
  
 
 function App() {
@@ -13,12 +15,12 @@ function App() {
     <Router>
       <Navbar />
       <Sidebar {...SidebarName}/>
-      
+      <Bg />
       <Switch>
          <Route path='/' exact component={Home} />
         
       </Switch>
-      <CirlceTest   {...Cssplus}/>
+  
       <Footer/>
     </Router>
      

@@ -31,15 +31,17 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   border-radius: 4px;
-  background: ${({ primary }) => (primary ? '#4B59F7' : '#0467FB')};
+  background: ${({ primary }) => (primary ? 'transparent' : '#0467FB')};
   white-space: nowrap;
   padding: ${({ big }) => (big ? '30px 170px' : '10px 20px')};
   color: #fff;
   font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
   outline: none;
-  border: none;
+  border:  2px solid #F0F;;
   cursor: pointer;
+  border:    ${({ borderon }) => ( borderon ? '2px solid #fff' : 'none')};
 
+ 
   &:hover {
     transition: all 0.3s ease-out;
     background: #fff;
