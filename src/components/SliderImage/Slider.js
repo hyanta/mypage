@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react'
 import SliderContent from './SliderContent';
 import sliderImage from "../../pages/HomePage/Data";
-
+import "./slider.css";
 
 // const len = sliderImage.length - 1;
 

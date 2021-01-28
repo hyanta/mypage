@@ -1,6 +1,6 @@
 
 import './App.css';
-import {Sidebar, CirlceTest} from './components';
+import {Sidebar, CirlceTest, ViewContainer} from './components';
 import Navbar from './components/Navbar/Navbar.js' 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom' 
 import Home from './pages/HomePage/Home';
@@ -18,7 +18,7 @@ function App() {
       <Bg />
       <Switch>
          <Route path='/' exact component={Home} />
-        
+         <Route path='/view' component={ViewContainer} />
       </Switch>
   
       <Footer/>

@@ -4,7 +4,7 @@ import { Container } from "../../globalStyles";
 import {Link} from 'react-scroll'
 
 export const Nav = styled.nav`
-  background: rgba(77,58,62, 0.7);
+  background: rgba(77,58,62, 0.9);
   height: 70px;
   display: flex;
   justify-content: center;
@@ -34,6 +34,10 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin: 0 auto;
+    .active{
+      color:#fff2d0;
+    }
+
       li:nth-child(4){
          border:none;
        }
@@ -57,11 +61,12 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
   border-bottom: 4px solid transparent;
   padding: 0 10px;
+  
   &:hover {
     height: 70px;
     border-bottom: 4px solid #fff3cd;
-      
   }
+
 
   @media screen and (max-width: 960px) {
     height: 100px;
@@ -86,10 +91,9 @@ export const NavLinks = styled(Link)`
   font-weight: 700;
   font-size: 24px;
   justify-content:center;
- 
-
+    
   &:hover {
-    color: #fff3cd;
+    color: #fff2d0;
     transition: all 0.3s ease;
    
   }
@@ -101,7 +105,7 @@ export const NavLinks = styled(Link)`
     display: flex;
 
     &:hover {
-      color: #00b0f4;
+      color: #fff;
       transition: all 0.3s ease;
     }
   }
@@ -114,7 +118,7 @@ export const Quick = styled.div`
     width: 130px;
     height: 130px;
   background-color:rgba(77,58,62);
-
+ border-radius:10px;
   &:hover{
     color: #fff;
    
@@ -125,7 +129,7 @@ export const Quick = styled.div`
     width: 100%;
     height: 100px;
     position:relative;
-    
+    border-radius:0px;
     border-bottom: 0px;
     
     &:hover {
@@ -135,3 +139,4 @@ export const Quick = styled.div`
       border-bottom: 0px;
     }
   }`;
+

@@ -1,0 +1,217 @@
+ 
+
+
+.view {
+  width: 100%;
+  overflow: hidden;
+  padding: 180px 0 120px 0;
+  background: white;
+  &__container {
+   
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgb(99 99 99 / 20%);
+    overflow: hidden;
+
+    @media only screen and (max-width: 1600px){
+        width: 1280px;
+    }
+    
+  }
+  &__top {
+    background: url("http://maroocorp.co.kr/img/maru/1595909256_23892.jpg")
+      no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    &__personal_color {
+      background: rgb(166, 193, 208);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0.7;
+    }
+    p {
+      width: 100%;
+      overflow: hidden;
+      padding: 10px 0 20px 440px;
+      font-size: 40px;
+      font-weight: 200;
+      color: #fff;
+      z-index: 3;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    width: 100%;
+    overflow: visible;
+    position: relative;
+    padding: 0 100px;
+    &__circle_img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 10px solid #fff;
+      overflow: hidden;
+      position: absolute;
+      left: 100px;
+      top: -100px;
+      z-index: 2;
+      img {
+        height: 100%;
+      }
+    }
+
+    &__wrap {
+    //   width: 100%;
+      overflow: hidden;
+      padding-bottom: 120px;
+
+      &__view_tap {
+        // float: left;
+        width: 200px;
+        overflow: hidden;
+        padding: 140px 0 0 0;
+        ul {
+          width: 100%;
+          overflow: hidden;
+          border-radius: 10px;
+          background: #f6f7f9;
+          padding: 20px;
+          li {
+            width: 100%;
+            overflow: hidden;
+            :hover {
+              background: #fff;
+              font-weight: bold;
+              transition: 0.2s;
+            }
+            :active {
+              background: #fff;
+              font-weight: bold;
+              transition: 0.2s;
+            }
+            a {
+              display: inline-block;
+              width: 100%;
+              height: 60px;
+              font-size: 16px;
+              line-height: 30px;
+              font-weight: 500;
+              padding: 15px;
+              border-radius: 7px;
+              color: #212224;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__field {
+    width: calc(100% - 200px);
+    overflow: hidden;
+    padding: 0 0 0 50px;
+
+    &__top_info {
+        width: 100%;
+        overflow: hidden;
+        padding: 15px 0;
+        //  height: 105px; 
+        height: auto;
+            &__dob{
+                overflow: hidden;
+                  /* width: 600px; */
+                  width: calc(100% - 250px);
+                   height: 100%;
+                   p{
+                    width: 100%;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                    font-weight: bold;
+                    font-family: 'Noto Sans', sans-serif;
+                    font-weight: 600;
+                    span{
+                        color: #a2a7b2;
+                        font-size: 16px;
+                        font-weight: 400;
+                        padding-left: 5px;
+                    }
+                   }
+                   &__cat{
+                    display: inline-block;
+                    padding: 8px 15px;
+                    background: #212224;
+                    border-radius: 3px;
+                    font-size: 12px;
+                    font-weight: 900;
+                    color: #fff;
+                   }
+            }
+    }
+
+
+    &__tap_pc{
+        width: 100%;
+        overflow: hidden;
+        padding-top: 40px;
+         
+        &__profile {
+            width: 100%;
+            overflow: hidden;
+            padding-top: 80px;
+
+              &__section{
+                width: 100%;
+                overflow: hidden;
+                padding-bottom: 80px;
+                  &__section_title{
+                    width: 100%;
+                    overflow: hidden;
+                    
+                    font-size: 30px;
+                    font-weight: 800;
+                    position: relative;
+                    padding: 5px 0 20px 0;
+                    &:before{
+                        content: '';
+                        display: block;
+                        width: 30px;
+                        height: 4px;
+                        background: #212224;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                  }
+
+                  &__con_box{
+                    width: 100%;
+                    overflow: hidden;
+                      &__p {
+                        color: #9ba1ad;
+                        font-size: 20px;
+                        letter-spacing: -1px;
+                        font-weight: 300;
+                      }
+                  }
+              }
+           }
+    }
+    }
+
+
+}
+

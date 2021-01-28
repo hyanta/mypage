@@ -3,22 +3,23 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import { SideItem, SideLink, Nav, ImgWrapper, Img, LinkWrap, Util, Down, IcoWrapper, BottomLink, BottomWrapper, Img2,} from './Sidebar.elements'
+import { SideItem, SideLink, Nav, ImgWrapper, Img, LinkWrap, Util, Down, IcoWrapper, BottomLink, BottomWrapper, Img2, ImgStart,} from './Sidebar.elements'
  
 const NavIcon = styled(Link)`
   position: absolute;
   top: 0;
   left: 210px;
-  background: #1d1f76;
+  background: #bd2e2a;
   width: 50px;
   height: 50px;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  color:#ecb02e;
 `;
 const SidebarNav = styled.nav`
-  background: #888;
+  background: rgba(31,28,24,0.8);
   width: 210px;
   height: 100vh;
   display: flex;
@@ -31,9 +32,9 @@ const SidebarNav = styled.nav`
 `;
 const SidebarWrap = styled.div`
   width: 100%;
-  
   display: flex;
   flex-direction: column;
+  
 `;
 
 const Bgblack = styled.span`
@@ -51,7 +52,7 @@ const Bgblack = styled.span`
 
 
 
-const Sidebar = ({img,alt,img2}) => {
+const Sidebar = ({img,alt,img2,img3}) => {
   const [sidebar, setSidebar] = useState(true);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -76,25 +77,27 @@ const Sidebar = ({img,alt,img2}) => {
         <SidebarWrap>
           
           <SideItem>
-            <SideLink> 로고 들어가는 부분 </SideLink>
+            <ImgStart src={img3} alt={alt}/>
+            <SideLink> 다른 사이트 바로가기▶ </SideLink>
+
             </SideItem>
          <Nav>
             <ImgWrapper  >
               <LinkWrap>
                 <Img src={img} alt={alt} />
-                글씨를 써주세요
+                <p>PRO SHOP</p>
                 </LinkWrap>
                 </ImgWrapper  >
                 <ImgWrapper  >
               <LinkWrap>
                 <Img src={img} alt={alt} />
-                글씨를 써주세요
+                <p>Styled-Components</p>
                 </LinkWrap>
             </ImgWrapper  >
             <ImgWrapper  >
               <LinkWrap>
                 <Img src={img} alt={alt} />
-                글씨를 써주세요
+                <p>글씨를 써주세요</p>
                 </LinkWrap>
                 </ImgWrapper  >
           <BottomWrapper>

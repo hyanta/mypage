@@ -85,6 +85,12 @@ export const CircleColumn = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  p:nth-child(1) {
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    
+  }
 `;
 
 export const H2 = styled.div``;

@@ -1,6 +1,9 @@
-import React from "react";
+import React,{useState} from "react";
 import { Link } from "react-router-dom";
 import { Button, Container } from "../../globalStyles";
+import Dots from "../SliderImage/Dots";
+import Slider from "../SliderImage/Slider";
+import SliderContent from "../SliderImage/SliderContent";
 import {
   Heading,
   InfoColumn,
@@ -24,7 +27,15 @@ const SecondInfo = ({
   secondLine,
   headtitle2,
   subTitle2,
-}) => {
+
+
+
+}
+
+
+) => {
+  const [activeIndex, setActiveIndex] = useState(0)
+
   return (
     <InfoSec id="portfolio">
       <Container>
@@ -39,7 +50,12 @@ const SecondInfo = ({
           </InfoColumn>
           <InfoColumnTwo>
             <ImgWrapper start>
-              <Img src={img} alt={alt} />
+            <div className='slider-container'>
+                <SliderContent activeIndex={activeIndex} />      <Dots
+              activeIndex={activeIndex}
+              onclick={(activeIndex) => setActiveIndex(activeIndex)}
+              />
+        </div>
             </ImgWrapper>
           </InfoColumnTwo>
           <InfoColumnTwo>
@@ -54,9 +70,15 @@ const SecondInfo = ({
                 {subTitle2}
               </Subtitle>
             </TextWrapper>
-            <Link to='/'>
-              <ButtonSecond borderon>ADOBE</ButtonSecond>
-            </Link>
+            {/* <Link to='/'>
+            
+              <ButtonSecond borderon
+              >ADOBE</ButtonSecond>
+            </Link> */}
+              <Dots
+              activeIndex={activeIndex}
+              onclick={(activeIndex) => setActiveIndex(activeIndex)}
+              />
           </InfoColumnTwo>
         </InfoRow>
       </Container>

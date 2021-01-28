@@ -14,6 +14,7 @@ export const BgVideo = styled.div`
     top: 0;
     left: 0;
     z-index: -1;
+    background-color:rgba(47,42,36);
 `
 export const Video = styled.video`
    

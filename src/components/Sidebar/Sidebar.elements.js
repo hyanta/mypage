@@ -7,23 +7,32 @@ export const SideItem = styled.div`
   align-items: center;
   width: 100%;
   height: 140px;
-  background-color: #fff;
+  background-color: #bd2e2a;
+  flex-direction:column;
+   
 `;
+
+export const ImgStart = styled.img`
+
+`
 
 export const SideLink = styled(Link)`
   list-style: none;
   text-decoration: none;
-  background-color: #fff;
+  color:#ecb02e;
+  letter-spacing: -1px;
+  padding-top: 5px;
+
 `;
 
 export const Nav = styled.nav`
  display: flex;
   flex-direction: column;
-  
   width: 100%;
   height: 85%;
   margin: 0 auto 40px;
   padding-top: 30px;
+  
 `;
 
 export const ImgWrapper = styled.ul`
@@ -31,17 +40,20 @@ export const ImgWrapper = styled.ul`
 display:flex;
 justify-content:center;
 
-  background-color: #444;
+  /* background-color: #444; */
    
-
-   
+  
 `;
 
 export const Img = styled.img`
  
   background-color: #555;
-  border: 3px solid #3f43ba;
-
+  border: 3px solid #bd2e2a;
+   
+  :hover{
+    
+  }
+   
 
 `;
 
@@ -54,8 +66,9 @@ text-decoration: none;
     justify-content: center;
     flex-direction:column;
     margin-bottom: 15px;
-
-  
+   color:#a9a9a9;
+   font-weight: 500;
+   font-size: 16px;
 `
 
 export const Util = styled.div`
@@ -68,7 +81,10 @@ text-align:center;
 export const BottomLink = styled(Link)`
 font-size: 35px;
  margin:7px;
- 
+ color:#a9a9a9;
+ :hover{
+  color:#f4f4f4;
+ }
 `
 
 export const Down = styled.div`
@@ -84,6 +100,6 @@ export const BottomWrapper = styled.div`
 `
 
 export const Img2 = styled.img`
-   
+   border-radius: 5px;
 `
 

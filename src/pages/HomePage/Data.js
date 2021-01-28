@@ -39,33 +39,44 @@ export const homeObjThree = {
   img2: require("../../images/ico2.jpg").default,
   img3: require("../../images/ico3.jpg").default,
   img4: require("../../images/ico4.jpg").default,
+  smalltext: '테스트 하나',
+  smalltext2:'테스트 둘',
+  smalltext3: '테스트 셋',
+  smalltext4: '테스트 넷',
+  linetext: 'text',
+  linetext2: 'dlskd',
+  linetext3: 'aadad',
+  linetext4:'ttetyy',
 };
 
 export const SidebarName = {
   img: require("../../images/sm01.jpg").default,
   alt: "nopic",
   img2: require("../../images/bm01.jpg").default,
+  img3: require("../../images/logo.png").default,
 };
 
-export const sliderImage = [
+const sliderImage = [
   {
     title: "First Slide",
     description: "This is the First Slider of our Carousel",
-    img: require("../../images/sample").default,
+    img: require("../../images/sample.jpg").default,
   },
   {
     title: "Second Slide",
     description: "This is the Second Slider of our Carousel",
-    img: require("../../images/sample2").default,
+    img: require("../../images/sample2.jpg").default,
   },
   {
     title: "Third Slide",
-    defscription: "This is the Third Slider of our Carousel",
-    img: require("../../images/sample3").default,
+    description: "This is the Third Slider of our Carousel",
+    img: require("../../images/sample3.jpg").default,
   },
   {
     title: "Fourth Slide",
-    defscription: "This is the Fourth Slider of our Carousel",
-    img: require("../../images/sample4").default,
+    description: "This is the Fourth Slider of our Carousel",
+    img: require("../../images/sample4.jpg").default,
   },
 ];
+
+export default sliderImage

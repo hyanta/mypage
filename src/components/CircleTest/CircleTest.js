@@ -89,7 +89,12 @@ const Image = styled.img`
   width: 100%;
 `;
 
-const CircleTest = ({ img1 }) => {
+const TextSmallWrapper = styled.div`
+  padding:10px 0;
+     
+`
+
+const CircleTest = ({ img1,smalltext,linetext }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -113,10 +118,10 @@ const CircleTest = ({ img1 }) => {
       <CircleIn to='/'>
         <HoverBox scrollNav={scrollNav} onClick={toggleHome}>
           <Sspan>
-            <span>Test</span>
+            <span>{linetext}</span>
           </Sspan>
           <Sspan>
-            <span>Teit</span>
+            <span>{linetext}</span>
           </Sspan>
           <CircleImageWrap>
             <Image
@@ -126,7 +131,9 @@ const CircleTest = ({ img1 }) => {
           </CircleImageWrap>
         </HoverBox>  
       </CircleIn>
-    글자 테스트
+      <TextSmallWrapper>
+        <p>{smalltext}</p>
+        </TextSmallWrapper>
     </CircleWrapper>
   );
 };
