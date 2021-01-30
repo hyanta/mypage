@@ -35,7 +35,7 @@ const Navbar = () => {
 
 
   return (
-    <Nav style={{background}} id='navbar'>
+    <Nav style={{background}} className='navbar' id='navbar'>
       <NavbarContainer>
         <NavMenu >
           <NavItem >

@@ -12,10 +12,10 @@ import {
   Subtitle,
   TextWrapper,
   TopLine,
-  Img,
+  
   ImgWrapper,
   InfoColumnTwo,
-  ButtonSecond,
+   
 } from "./SecondInfo.elements";
 
 const SecondInfo = ({

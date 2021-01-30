@@ -1,21 +1,12 @@
-import React, { useState } from "react";
-import { viewImage } from "../../pages/HomePage/Data";
+import React from "react";
 import "./ViewContainer.scss";
+import viewImage  from "../../pages/HomePage/Data";
+
+  
 
 
-
-
-
-const ViewContainer = ({index, prevSlide}) => {
-  const [toggleState, setToggleState] = useState(2);
-  const [activeIndex, setActiveIndex] = useState(1); 
-
- 
-
-  const ToggleTap = (index) => {
-    setToggleState(index);
-  };
-
+const ViewContainer = (props,img) => {
+        
     return (
        
 
@@ -25,13 +16,7 @@ const ViewContainer = ({index, prevSlide}) => {
         {/* 뷰 상단 */}
         <div className='view__top'>
           <div className='view__top__personal_color'></div>
-            <p>firstname</p>
-            <div className='view__top__button_wrap'>
-              <a
-                href='/'
-                className='view__top__button_wrap__view_prev'>이전포폴</a>
-              <a href='/' className='view__top__button_wrap__view_next'>다음포폴</a>
-            </div>
+          <p>firstname</p>
         </div>
         {/* 뷰 하단 */}
         <div className='view__bottom'>
@@ -43,19 +28,11 @@ const ViewContainer = ({index, prevSlide}) => {
             {/* pc버전 텝메뉴 */}
             <div className='view__bottom__wrap__view_tap'>
               <ul>
-                  <li
-                 
-                  >
-                    <a href='/'
-                                   className={toggleState === 1 ? 'active' : ''}
-                                   onClick={()=> ToggleTap(1)}      
-                    >Profile</a>
+                <li>
+                  <a href='/'>Profile</a>
                 </li>
                 <li>
-                    <a href='/'
-                    className={toggleState === 2 ? 'active' : ''}
-                    onClick={()=> ToggleTap(2)}  
-                    >Filmography</a>
+                  <a href='/'>Filmography</a>
                 </li>
               </ul>
             </div>
@@ -76,16 +53,9 @@ const ViewContainer = ({index, prevSlide}) => {
                                 <div className='view__field__tap_pc__profile__section'>
                                     <h3 className='view__field__tap_pc__profile__section__section_title'>ABOUT</h3>
                                   <div className='view__field__tap_pc__profile__section__con_box'>
-                      {
-                        viewImage.map((props,index) => (
-                          <img
-                            key={index}
-                            src={props.img} alt='none' className='view__field__tap_pc__profile__section__con_box__p' />))}   
-                                   
-                          </div>
+                                      <img src={viewImage.img} alt='none' className='view__field__tap_pc__profile__section__con_box__p'/> 
+                                    </div>
                                 </div>
-                      
-                        
               
               </div>
             </div>

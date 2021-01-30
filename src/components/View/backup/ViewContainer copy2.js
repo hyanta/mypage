@@ -6,9 +6,9 @@ import "./ViewContainer.scss";
 
 
 
-const ViewContainer = ({index, prevSlide}) => {
+const ViewContainer = () => {
   const [toggleState, setToggleState] = useState(2);
-  const [activeIndex, setActiveIndex] = useState(1); 
+  const [activeIndex, setActiveIndex] = useState(0); 
 
  
 
@@ -27,9 +27,7 @@ const ViewContainer = ({index, prevSlide}) => {
           <div className='view__top__personal_color'></div>
             <p>firstname</p>
             <div className='view__top__button_wrap'>
-              <a
-                href='/'
-                className='view__top__button_wrap__view_prev'>이전포폴</a>
+              <a href='/' className='view__top__button_wrap__view_prev'>이전포폴</a>
               <a href='/' className='view__top__button_wrap__view_next'>다음포폴</a>
             </div>
         </div>

@@ -39,14 +39,14 @@ export const homeObjThree = {
   img2: require("../../images/ico2.jpg").default,
   img3: require("../../images/ico3.jpg").default,
   img4: require("../../images/ico4.jpg").default,
-  smalltext: '테스트 하나',
-  smalltext2:'테스트 둘',
-  smalltext3: '테스트 셋',
-  smalltext4: '테스트 넷',
-  linetext: 'text',
-  linetext2: 'dlskd',
-  linetext3: 'aadad',
-  linetext4:'ttetyy',
+  smalltext: "테스트 하나",
+  smalltext2: "테스트 둘",
+  smalltext3: "테스트 셋",
+  smalltext4: "테스트 넷",
+  linetext: "text",
+  linetext2: "dlskd",
+  linetext3: "aadad",
+  linetext4: "ttetyy",
 };
 
 export const SidebarName = {
@@ -79,4 +79,32 @@ const sliderImage = [
   },
 ];
 
-export default sliderImage
+export default sliderImage;
+
+export const viewImage = [
+  {
+    img: require("../../images/picture01.jpg").default,
+  },
+  {
+    img: require("../../images/picture01.jpg").default,
+  },
+  {
+    img: require("../../images/picture01.jpg").default,
+  },
+  {
+    img: require("../../images/picture01.jpg").default,
+  },
+  {
+    img: require("../../images/picture01.jpg").default,
+  },
+  {
+    img: require("../../images/picture01.jpg").default,
+  },
+];
+
+export const arrowies = [
+  { url: "/1" },
+  { url: "/1" },
+  { url: "/1" },
+  { url: "/1" },
+];
