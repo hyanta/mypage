@@ -1,20 +1,29 @@
 import React from "react";
 import { Link } from "react-scroll";
-import arrowies from '../../pages/HomePage/Data'
+import arrowies from "./ViewData";
 
 const Arrows = (props) => {
-    return (
-      
-    arrowies.map((url)=>(  <div className='view__top__button_wrap'>
-      <Link to={url} className='view__top__button_wrap__view_prev'>
+  return arrowies.map((slide,index) => (
+    <div
+          key={index}
+          
+          className={
+           
+        index === props.activeIndex ? "view__top__button_wrap" : "inactive"
+      }
+    >
+          <a
+            onClick={props.prevSlide}
+              href={slide.url} className='view__top__button_wrap__view_prev'>
         이전포폴
-      </Link>
-      <Link to={url} className='view__top__button_wrap__view_next'>
+      </a>
+          <span
+              onClick={props.nextSlide}
+              href={slide.url} className='view__top__button_wrap__view_next'>
         다음포폴
-      </Link>
-    </div>))
-  
-  );
+      </span>
+    </div>
+  ));
 };
 
 export default Arrows;

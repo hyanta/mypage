@@ -102,9 +102,4 @@ export const viewImage = [
   },
 ];
 
-export const arrowies = [
-  { url: "/1" },
-  { url: "/1" },
-  { url: "/1" },
-  { url: "/1" },
-];
+ 

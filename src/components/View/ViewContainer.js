@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import { viewImage } from "../../pages/HomePage/Data";
+import Arrows from "./Arrows";
 import "./ViewContainer.scss";
+import arrowies from "./ViewData";
 
-
-
-
+const len = arrowies.length -1;
 
 const ViewContainer = ({index, prevSlide}) => {
   const [toggleState, setToggleState] = useState(2);
-  const [activeIndex, setActiveIndex] = useState(1); 
-
+  const [activeIndex, setActiveIndex] = useState(0); 
  
 
   const ToggleTap = (index) => {
@@ -26,12 +25,22 @@ const ViewContainer = ({index, prevSlide}) => {
         <div className='view__top'>
           <div className='view__top__personal_color'></div>
             <p>firstname</p>
-            <div className='view__top__button_wrap'>
+            {/* <div className='view__top__button_wrap'>
               <a
                 href='/'
                 className='view__top__button_wrap__view_prev'>이전포폴</a>
               <a href='/' className='view__top__button_wrap__view_next'>다음포폴</a>
-            </div>
+            </div> */}
+            <Arrows
+              activeIndex={activeIndex}
+              prevSlide={() =>
+                setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
+              }
+              nextSlide={() =>
+                setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
+              }
+              
+            />
         </div>
         {/* 뷰 하단 */}
         <div className='view__bottom'>
