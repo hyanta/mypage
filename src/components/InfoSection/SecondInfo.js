@@ -27,9 +27,6 @@ const SecondInfo = ({
   secondLine,
   headtitle2,
   subTitle2,
-
-
-
 }
 
 

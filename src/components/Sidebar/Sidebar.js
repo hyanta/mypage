@@ -9,14 +9,14 @@ const NavIcon = styled(Link)`
   position: absolute;
   top: 0;
   left: 210px;
-  background: #bd2e2a;
+  background: #4e3d53;
   width: 50px;
   height: 50px;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#ecb02e;
+  color:rgba(196,151,112);
 `;
 const SidebarNav = styled.nav`
   background: rgba(31,28,24,0.8);
@@ -52,7 +52,7 @@ const Bgblack = styled.span`
 
 
 
-const Sidebar = ({img,alt,img2,img3}) => {
+const Sidebar = ({alt,img2,img3,img1A,img1B,img1C}) => {
   const [sidebar, setSidebar] = useState(true);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -84,19 +84,19 @@ const Sidebar = ({img,alt,img2,img3}) => {
          <Nav>
             <ImgWrapper  >
               <LinkWrap>
-                <Img src={img} alt={alt} />
+                <Img src={img1A} alt={alt} />
                 <p>PRO SHOP</p>
                 </LinkWrap>
                 </ImgWrapper  >
                 <ImgWrapper  >
               <LinkWrap>
-                <Img src={img} alt={alt} />
+                <Img src={img1B} alt={alt} />
                 <p>Styled-Components</p>
                 </LinkWrap>
             </ImgWrapper  >
             <ImgWrapper  >
               <LinkWrap>
-                <Img src={img} alt={alt} />
+                <Img src={img1C} alt={alt} />
                 <p>글씨를 써주세요</p>
                 </LinkWrap>
                 </ImgWrapper  >

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 import "./ViewNavbar.scss";
 
 const ViewNavbar = () => {
@@ -36,40 +37,40 @@ const ViewNavbar = () => {
         <div className='hd__wrapper__navi_wrap'>
           <ul>
             <li>
-              <a
+              <Link
                 className={toggleState === 1 ? "on" : ""}
                 onClick={() => toggleTab(1)}
-                href='/'
+                href='/view'
               >
                 COMPANY
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className={toggleState === 2 ? "on" : ""}
                 onClick={() => toggleTab(2)}
-                href='/'
+                href='/view'
               >
                 ARTIST
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className={toggleState === 3 ? "on" : ""}
                 onClick={() => toggleTab(3)}
-                href='/'
+                href='/view'
               >
                 NEWS&NOTICE
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className={toggleState === 4 ? "on" : ""}
                 onClick={() => toggleTab(4)}
-                href='/'
+                href='/view'
               >
                 AUDITION
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

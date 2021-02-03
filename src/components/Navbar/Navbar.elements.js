@@ -139,4 +139,4 @@ export const Quick = styled.div`
       border-bottom: 0px;
     }
   }`;
-
+ 

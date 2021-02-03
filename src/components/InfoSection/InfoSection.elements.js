@@ -12,8 +12,6 @@ export const InfoRow = styled.div`
   flex-wrap: wrap;
   align-items: center;
   flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
-
-
 `;
 
 export const InfoColumn = styled.div`
@@ -42,7 +40,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: ${({ lightTopLine }) => (lightTopLine ? "#a9b3c1" : "#4B59F7")};
+  color: ${({ lightTopLine }) => (lightTopLine ? "#f2f2f2" : "#4B59F7")};
   font-size: 18px;
   line-height: 16px;
   font-weight: 700;
@@ -64,7 +62,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 24px;
   line-height: 1.7;
-  color: ${({ lightTextDesc }) => (lightTextDesc ? "#a9b3c1" : "#1c2237")};
+  color: ${({ lightTextDesc }) => (lightTextDesc ? "#f2f2f2" : "#1c2237")};
 `;
 
 export const Img = styled.img`

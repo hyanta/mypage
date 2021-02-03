@@ -1,70 +1,110 @@
 import React, { useState } from "react";
 import { viewImage } from "../../pages/HomePage/Data";
-import Arrows from "./Arrows";
-import "./ViewContainer.scss";
 import arrowies from "./ViewData";
-
-const len = arrowies.length -1;
-
-const ViewContainer = ({index, prevSlide}) => {
-  const [toggleState, setToggleState] = useState(2);
-  const [activeIndex, setActiveIndex] = useState(0); 
- 
+import "./ViewContainer.scss";
+import Arrows from "./Arrows";
+import "../../images/bigBanner01.jpg";
+import "../../images/bigBanner02.jpg";
+import "../../images/bigBanner03.jpg";
+import "../../images/bigBanner04.jpg";
+const ViewContainer = (props) => {
+  const [toggleState, setToggleState] = useState(1);
 
   const ToggleTap = (index) => {
     setToggleState(index);
   };
 
-    return (
-       
-
-
-    <div className='view'>
+  return arrowies.map((slide, index) => (
+    <div
+      key={index}
+      className={index === props.activeIndex ? "view" : "inactive"}
+    >
       <div className='view__container'>
         {/* 뷰 상단 */}
-        <div className='view__top'>
+        <div
+          key={index}
+          className={
+            index === props.activeIndex ? "   view__top" : "inactive"
+             
+          }
+        >
+           <div
+          key={index}
+          className={
+            index === 1 ? "   view__top topa" : "inactive"
+          }
+        ></div>
+        <div
+          key={index}
+          className={
+            index === 2 ? "   view__top topb" : "inactive"
+          }
+        ></div>
+        <div
+          key={index}
+          className={
+            index === 3 ? "  view__top topc" : "inactive"
+          }
+        ></div>
+
           <div className='view__top__personal_color'></div>
-            <p>firstname</p>
-            {/* <div className='view__top__button_wrap'>
-              <a
-                href='/'
-                className='view__top__button_wrap__view_prev'>이전포폴</a>
-              <a href='/' className='view__top__button_wrap__view_next'>다음포폴</a>
+          <p>{slide.firstname}</p>
+          {/* <div
+                key={index}
+               
+                className={index === props.activeIndex ? "view__top__button_wrap" : "inactive"}>
+              <span
+                  href={slide.url}
+                  onClick={props.prevSlide}
+                className='view__top__button_wrap__view_prev'>이전포폴</span>
+                <span href={slide.url}
+                   onClick={props.nextSlide}
+                  className='view__top__button_wrap__view_next'>다음포폴</span>
             </div> */}
-            <Arrows
-              activeIndex={activeIndex}
-              prevSlide={() =>
-                setActiveIndex(activeIndex < 1 ? len : activeIndex - 1)
-              }
-              nextSlide={() =>
-                setActiveIndex(activeIndex === len ? 0 : activeIndex + 1)
-              }
-              
-            />
+          <div className={"view__top__button_wrap"}>
+            <span
+              onClick={props.prevSlide}
+              className='view__top__button_wrap__view_prev'
+            >
+              이전포폴
+            </span>
+            <span
+              onClick={props.nextSlide}
+              className='view__top__button_wrap__view_next'
+            >
+              다음포폴
+            </span>
+          </div>
         </div>
+       
         {/* 뷰 하단 */}
         <div className='view__bottom'>
           <div className='view__bottom__circle_img'>
-                          <img src='http://maroocorp.co.kr/img/maru/1595489907_41228.jpg' alt='none' />
-                           
+            <img
+              src={slide.circle}
+              alt='none'
+            />
           </div>
           <div className='view__bottom__wrap'>
             {/* pc버전 텝메뉴 */}
             <div className='view__bottom__wrap__view_tap'>
               <ul>
-                  <li
-                 
+                <li>
+                  <span
+                    className={toggleState === 1 ? "active " : ""}
+                    onClick={() => ToggleTap(1)}
                   >
-                    <a href='/'
-                                   className={toggleState === 1 ? 'active' : ''}
-                                   onClick={()=> ToggleTap(1)}      
-                    >Profile</a>
+                    {slide.profile}
+                  </span>
                 </li>
                 <li>
-                    <a href='/'
-                    className={toggleState === 2 ? 'active' : ''}
-                    onClick={()=> ToggleTap(2)}  
-                    >Filmography</a>
+                  <span
+                    href='/'
+                    className={toggleState === 2 ? "active" : ""}
+                    onClick={() => ToggleTap(2)}
+                  >
+                    {slide.filmography}
+                  </span>
                 </li>
               </ul>
             </div>
@@ -74,35 +114,220 @@ const ViewContainer = ({index, prevSlide}) => {
             <div className='view__field__top_info'>
               <div className='view__field__top_info__dob'>
                 <p>
-                  이름이
-                  <span>1997.04.25</span>
+                  {slide.subname}
+                  <span>{slide.date}</span>
                 </p>
-                <span className='view__field__top_info__dob__cat'>ACTORS</span>
+                <span className='view__field__top_info__dob__cat'>
+                  {slide.actors}
+                </span>
               </div>
             </div>
-                      <div className='view__field__tap_pc'>
-                          <div className='view__field__tap_pc__profile'>
-                                <div className='view__field__tap_pc__profile__section'>
-                                    <h3 className='view__field__tap_pc__profile__section__section_title'>ABOUT</h3>
-                                  <div className='view__field__tap_pc__profile__section__con_box'>
-                      {
-                        viewImage.map((props,index) => (
-                          <img
-                            key={index}
-                            src={props.img} alt='none' className='view__field__tap_pc__profile__section__con_box__p' />))}   
-                                   
-                          </div>
-                                </div>
-                      
-                        
-              
+            <div className='view__field__tap_pc'>
+              <div className='view__field__tap_pc__profile'>
+                {/* ABOUT 토글 */}
+                <div
+                  className={
+                    toggleState === 1
+                      ? "view__field__tap_pc__profile__section"
+                      : "inactive"
+                  }
+                >
+                  <h3 className='view__field__tap_pc__profile__section__section_title'>
+                    ABOUT
+                  </h3>
+                  <div
+                    className={
+                      index === 0
+                        ? "view__field__tap_pc__profile__section__con_box"
+                        : "inactive"
+                    }
+                  >
+                    <img
+                      src={slide.img1}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                    <img
+                      src={slide.img2}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+
+                    <img
+                      src={slide.img3}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                       <img
+                      src={slide.img4}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                        <img
+                      src={slide.img5}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+    <img
+                      src={slide.img6}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+    <img
+                      src={slide.img7}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+
+                  </div>
+
+                  <div
+                    className={
+                      index === 1
+                        ? "view__field__tap_pc__profile__section__con_box"
+                        : "inactive"
+                    }
+                  >
+                    <img
+                      src={slide.img1}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                    <img
+                      src={slide.img2}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                     <img
+                      src={slide.img3}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                     <img
+                      src={slide.img4}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                       <img
+                      src={slide.img5}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                       <img
+                      src={slide.img6}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                       <img
+                      src={slide.img7}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                  </div>
+
+                  <div
+                    className={
+                      index === 2
+                        ? "view__field__tap_pc__profile__section__con_box"
+                        : "inactive"
+                    }
+                  >
+                    <img
+                      src={slide.img1}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                    <img
+                      src={slide.img2}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                     <img
+                      src={slide.img3}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                     <img
+                      src={slide.img4}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                       <img
+                      src={slide.img5}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                       <img
+                      src={slide.img6}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                       <img
+                      src={slide.img7}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                      <img
+                      src={slide.img8}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                  </div>
+
+                  <div
+                    className={
+                      index === 3
+                        ? "view__field__tap_pc__profile__section__con_box"
+                        : "inactive"
+                    }
+                  >
+                    <img
+                      src={slide.img1}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                    <img
+                      src={slide.img2}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                     <img
+                      src={slide.img3}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                     <img
+                      src={slide.img4}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                       <img
+                      src={slide.img5}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                       <img
+                      src={slide.img6}
+                      alt='none'
+                      className='view__field__tap_pc__profile__section__con_box__p'
+                    />
+                 
+                  </div>
+             
+                
+               
+                 
+
+
+
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
+  ));
 };
 
 export default ViewContainer;

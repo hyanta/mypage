@@ -16,15 +16,15 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-  topLine: "텍스트를 입력해 주세요",
-  headline: "프로필",
+  topLine: "이런것들을 만들었어요",
+  headline: "아는것",
   Subtitle: "여기에 무엇을 적으면 좋을까요",
   description: "자세한 설명을 넣어 주세요",
   img: require("../../images/logo.jpg").default,
   alt: "Nologo",
   secondLine:
-    "아웃 같은 그래픽 요소나 시각적 연출을 보여줄 때 사용하는 표준 채우기 ",
-  headtitle2: "무언가를 지칭하는 용어로도 사용된다.",
+    "평범한 웹디자이너에서 코드도 쓸 줄 아는 디자이너로 거듭나다 ",
+  headtitle2: "코딩의 시대+ 웹디자인",
   subTitle2:
     "피부가 끓는 뭇 불어 동력은 같이, 피는 스며들어 봄바람이다. 얼음 할지니, 뛰노는 가장 밥을 것이다. 방황하여도, 청춘의 반짝이는 투명하되 보내는 힘있다. 힘차게 때에, 돋고, 끓는 크고 이것을 관현악이며, 무엇을 들어 그리하였는가?",
 };
@@ -39,10 +39,10 @@ export const homeObjThree = {
   img2: require("../../images/ico2.jpg").default,
   img3: require("../../images/ico3.jpg").default,
   img4: require("../../images/ico4.jpg").default,
-  smalltext: "테스트 하나",
-  smalltext2: "테스트 둘",
-  smalltext3: "테스트 셋",
-  smalltext4: "테스트 넷",
+  smalltext: "NODE JS",
+  smalltext2: "REACT JS",
+  smalltext3: "FIGMA",
+  smalltext4: "MONGO DB",
   linetext: "text",
   linetext2: "dlskd",
   linetext3: "aadad",
@@ -50,7 +50,9 @@ export const homeObjThree = {
 };
 
 export const SidebarName = {
-  img: require("../../images/sm01.jpg").default,
+  img1A: require("../../images/sm01.jpg").default,
+  img1B: require("../../images/sm02.jpg").default,
+  img1C: require("../../images/sm01.jpg").default,
   alt: "nopic",
   img2: require("../../images/bm01.jpg").default,
   img3: require("../../images/logo.png").default,

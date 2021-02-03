@@ -7,7 +7,7 @@ export const SideItem = styled.div`
   align-items: center;
   width: 100%;
   height: 140px;
-  background-color: #bd2e2a;
+  background-color: #4e3d53;
   flex-direction:column;
    
 `;
@@ -19,7 +19,7 @@ export const ImgStart = styled.img`
 export const SideLink = styled(Link)`
   list-style: none;
   text-decoration: none;
-  color:#ecb02e;
+  color:white;
   letter-spacing: -1px;
   padding-top: 5px;
 
@@ -48,7 +48,7 @@ justify-content:center;
 export const Img = styled.img`
  
   background-color: #555;
-  border: 3px solid #bd2e2a;
+  border: 3px solid rgba(77,58,62);
    
   :hover{
     

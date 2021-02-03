@@ -1,6 +1,5 @@
  
 
-
 .view {
   width: 100%;
   overflow: hidden;
@@ -19,14 +18,23 @@
     }
     
   }
+    &__toparrow{
+      width: 100%;
+        
+       position: absolute;
+    }
+  
+  
   &__top {
-    background: url("http://maroocorp.co.kr/img/maru/1595909256_23892.jpg")
+    background: url("../../images/bigBanner01.jpg")
       no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 400px;
     position: relative;
     overflow: hidden;
+
+
     &__personal_color {
       background: rgb(166, 193, 208);
       width: 100%;
@@ -129,7 +137,7 @@
               font-weight: bold;
               transition: 0.2s;
             }
-            a {
+            span {
               display: inline-block;
               width: 100%;
               height: 60px;
@@ -229,6 +237,7 @@
                     width: 100%;
                     overflow: hidden;
                     columns: 2;
+                    
                       &__p {
                         color: #9ba1ad;
                         font-size: 20px;
@@ -254,4 +263,19 @@
 
 .inactive {
   display: none;
+}
+
+.topa {
+    background: url("../../images/bigBanner02.jpg");
+    background-size: cover;
+}
+
+.topb {
+  background: url("../../images/bigBanner03.jpg");
+  background-size: cover;
+}
+
+.topc {
+  background: url("../../images/bigBanner04.jpg");
+  background-size: cover;
 }
