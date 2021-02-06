@@ -1,0 +1,187 @@
+.wrapper{
+    min-width: 100%;
+
+        &__container_wr{
+            margin: 0 auto;
+             height: 100%;
+              zoom: 1;
+       width: 100%;
+       overflow: hidden;
+          
+            &__sub_wrap{
+                padding: 280px 15px 0;
+                 letter-spacing: -1px;
+                 min-width: 320px;
+                    &__sub_title{
+                        text-align: center;
+                           h2{
+                            font-size: 50px;
+                            display: inline-block;
+                            position: relative;
+                            font-weight: 100;
+                            font-family: 'Montserrat', sans-serif;
+                                  &::after{
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    width: 100%;
+                                    height: 12px;
+                                    bottom: 6px;
+                                    left: 0;
+                                    z-index: -1;
+                                    background-color: rgba(171,208,217,0.3);
+                                  }
+                           }
+                    }
+                    &__sub_tap{
+                        margin-top: 80px;
+                        text-align: center;
+                              a{
+                                display: inline-block;
+                                width: 365px;
+                                height: 60px;
+                                line-height: 60px;
+                                font-size: 20px;
+                                font-weight: 900;
+                                font-family: 'Montserrat', sans-serif;
+                                text-align: center;
+                                margin-right: 36px;
+                                background-color: #212224;
+                                color: #fff;
+                                transition: 0.3s;
+
+                                // @media only screen and (max-width: 1300px)
+                                // .sub_tab a {
+                                //     width: calc(50% - 5px);
+                                //     margin-right: 6px;
+                                //     font-size: 18px;
+                                //     font-weight: bold;
+                            
+                              }
+                            }
+
+                       &__sub_container{
+                        width: 100%;
+                        max-width: 1580px;
+                        margin: 80px auto;
+                        box-shadow: 0 0 100px rgb(33 34 36 / 8%);
+                        padding:   80px;   //120px 180px;
+                        border-radius: 10px;
+
+                            //  @media only screen and (max-width: 1400px)
+                            // .sub_container {
+                            //     padding: 80px;
+                            // }
+                            &__sub_sec{
+                                
+                                margin-bottom: 120px;
+                                  &__com_sec_parah{
+                                    text-align: center;
+                                       &__big_p {
+                                        font-size: 40px;
+                                        padding-bottom: 25px;
+                                        color: #9ba1ad;
+                                        font-weight: 300;
+                                          .color_mint{
+                                            color: #5eaeba;
+                                          }
+                                       }
+                                        &__com_sec_log{
+                                            width: 100%;
+                                            padding: 65px;
+                                            background: #f7f8fa;
+                                            text-align: center;
+                                            margin: 40px 0;
+                                            border-radius: 17px;
+                                                 img{
+                                                    max-width: 100%;
+                                                 }
+                                        }
+
+                                        &__wide_lh{
+                                            line-height: 2.2;
+                                            font-size: 18px;
+                                            color: #9ba1ad;
+                                               .color_black{
+                                                color: #212224;
+                                              }
+                                              .color_mint{
+                                                color: #5eaeba;
+                                              }
+                                        }
+
+                                  }
+
+
+                                 &__pp{
+                                    font-size: 18px;
+                                    color: #9ba1ad;
+                                    font-weight: 300;
+                                 }
+
+
+                            }
+
+                            &__sub_sec{
+                                text-align: center;
+                                  &__title{
+                                    margin-bottom: 60px;
+                                    text-align: left;
+                                      ::before{
+                                        content: "";
+                                        display: block;
+                                        width: 40px;
+                                        height: 5px;
+                                        margin-bottom: 10px;
+                                        background: #5eaeba;
+                                      }
+                                      h3{
+                                        position: relative;
+                                        font-size: 40px;
+                                        font-weight: 300;
+                                        color: #212224;
+                                    
+                                       }
+                                  }
+
+                                &__com_circle_wrap{
+                                    text-align: center;
+                                    display: inline-block;
+                                    margin: 0 auto;
+                                    overflow: hidden;
+                                       &__com_circle{
+                                        font-size: 20px;
+                                        width: 250px;
+                                        height: 250px;
+                                        padding: 55px 5px;
+                                        img{
+                                            margin-bottom: 14px;
+                                        }
+                                          &__txt_area{
+                                            
+                                               p{
+                                                color: #fff;
+                                                font-size: 22px;
+                                               }
+                                           }
+                                    
+                                    }
+                                       .com_circle01{
+                                        background: url('http://maroocorp.co.kr/theme/basic/img/newbird/sub/about_icon_bg01.png');
+                                        background-size: 100% auto;
+                                       }
+                                       .com_circle02{
+                                        background: url('http://maroocorp.co.kr/theme/basic/img/newbird/sub/about_icon_bg02.png');
+                                        background-size: 100% auto;
+                                       }
+                                       .com_circle03{
+                                        background: url('http://maroocorp.co.kr/theme/basic/img/newbird/sub/about_icon_bg03.png');
+                                        background-size: 100% auto;
+                                       }
+                                }  
+                            }
+
+                       }     
+                 }   
+            }
+        }

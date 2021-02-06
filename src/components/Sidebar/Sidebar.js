@@ -53,7 +53,7 @@ const Bgblack = styled.span`
 
 
 const Sidebar = ({alt,img2,img3,img1A,img1B,img1C}) => {
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -95,9 +95,9 @@ const Sidebar = ({alt,img2,img3,img1A,img1B,img1C}) => {
                 </LinkWrap>
             </ImgWrapper  >
             <ImgWrapper  >
-              <LinkWrap>
+              <LinkWrap to='/view'>
                 <Img src={img1C} alt={alt} />
-                <p>글씨를 써주세요</p>
+                <p>Design-Portfolio</p>
                 </LinkWrap>
                 </ImgWrapper  >
           <BottomWrapper>

@@ -4,6 +4,10 @@ export const InfoSec = styled.div`
   color: #fff;
   padding: 160px 0;
   background: ${({ lightBg }) => (lightBg ? "#fff" : "rgba(47,42,36)")};
+         @media screen and (max-width: 780px) {
+          padding: 70px 0;
+               
+    }
 `;
 
 export const InfoRow = styled.div`
@@ -12,6 +16,11 @@ export const InfoRow = styled.div`
   flex-wrap: wrap;
   align-items: center;
   flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
+
+  @media screen and (max-width: 780px) {
+         
+               
+    }
 `;
 
 export const InfoColumn = styled.div`
@@ -25,6 +34,7 @@ export const InfoColumn = styled.div`
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    
   }
 `;
 
@@ -38,8 +48,10 @@ export const InfoColumnTwo = styled.div`
   @media screen and (max-width: 768px) {
     max-width: 100%;
     flex-basis: 100%;
-    display: flex;
+    display:grid;
     justify-content: center;
+    padding:0;
+       
   }
 `;
 
@@ -50,7 +62,22 @@ export const TextWrapper = styled.div`
   padding-bottom: 25px;
 
   @media screen and (max-width: 768px) {
-    padding-bottom: 65px;
+     
+    text-align:center;
+        .headtitle2{
+          font-size:30px;
+          letter-spacing: 2.1px;
+        }
+        .secondLine{
+          font-size:20px;
+          padding: 0 5px ;
+          text-align:left;
+        }
+        .subtitle2{
+          text-align: left;
+          font-size: 13px;
+          margin:0px;
+        }
   }
 `;
 
@@ -62,6 +89,11 @@ export const TopLine = styled.div`
   font-weight: 700;
   letter-spacing: 1.4px;
   margin-bottom: 35px;
+  @media screen and (max-width: 768px) {
+     font-size: 30px;
+         
+        
+  }
 `;
 
 export const Heading = styled.h1`
@@ -70,6 +102,12 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "rgba(196,151,112)")};
+
+  @media screen and (max-width: 768px) {
+     font-size: 60px;
+         
+        
+  }
 `;
 
 export const Subtitle = styled.p`
@@ -77,7 +115,12 @@ export const Subtitle = styled.p`
   font-size: ${({ smallsize }) => (smallsize ? "20px " : "24px")};
   line-height: 24px;
   color: ${({ lightTextDesc }) =>
-    lightTextDesc ? "#a9b3c1" : "rgba(176,123,79)"};
+  lightTextDesc ? "#a9b3c1" : "rgba(176,123,79)"};
+    @media screen and (max-width: 768px) {
+     font-size: 20px;
+         
+        
+  }
 `;
 
 export const ImgWrapper = styled.div`

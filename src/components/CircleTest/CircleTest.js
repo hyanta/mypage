@@ -8,12 +8,21 @@ const CircleWrapper = styled.div`
    justify-content:center;
    flex-direction:column;
    padding: 0 30px;
+   @media screen and (max-width: 768px) {
+     padding:0;
+     align-items: center;
+   }
 `;
 
 const CircleIn = styled(Link)`
   width: 160px;
   height: 160px;
-   position: relative;
+  position: relative;
+  @media screen and (max-width: 768px) {
+     width:60%;
+     height:60%;
+    
+   }
 `;
 
 const HoverBox = styled.div`
@@ -27,12 +36,19 @@ const HoverBox = styled.div`
   border-radius: 50%;
   background-color: rgba(246, 27, 237, 0.8);
 
+  @media screen and (max-width: 768px){
+    background-color:transparent;
+  }
+
   :hover {
     transform: translate(0, -30px);
+         
     span {
       :nth-child(1) {
         transform: translate(0, 0) rotate(-15deg);
         opacity: 1;
+       
+        
       }
       :nth-child(2) {
         transform: translate(0, 0) rotate(-15deg);
@@ -52,10 +68,13 @@ const Sspan = styled.span`
   color: #fff;
   font-weight: 500;
   font-size: 14px;
+
+  
+
   :hover {
     opacity: 1;
   }
-
+  
   :nth-child(1) {
     position: absolute;
     right: -20px;
@@ -91,6 +110,13 @@ const Image = styled.img`
 
 const TextSmallWrapper = styled.div`
   padding:10px 0;
+  @media screen and (max-width: 768px){
+
+    p:nth-child(1){
+                  font-size:23px;
+                  padding-top: 5px;
+       }
+  }
      
 `
 

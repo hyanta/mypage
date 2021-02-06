@@ -1,3 +1,5 @@
+ 
+
 :root {
     --heights: 30vh;
     --widths: 100%;
@@ -34,7 +36,10 @@
     position: absolute;
     object-fit: cover;
     border-radius: 5%;
+    
   }
+
+ 
 
   .slide-title,
   .slide-text {
@@ -82,3 +87,8 @@
   }
   
    
+  @media screen and (max-width: 768px) {
+    .slide-image{
+      position: inherit;
+    }
+  }

@@ -1,11 +1,20 @@
 import React from "react";
+ 
+import "./Company.scss";
 
-const company = () => {
+const Company = () => {
   return (
+    <>
+     
     <div className='wrapper'>
       <div className='wrapper__container_wr'>
         <div className='wrapper__container_wr__sub_wrap'>
-          <div className='wrapper__container_wr__sub_wrap__sub_title'></div>
+            <div className='wrapper__container_wr__sub_wrap__sub_title'>
+              <h2>
+                HELLO!
+                </h2>
+              <p>이 페이지는 전 회사의 작업이 들어 있습니다.</p>
+          </div>
           <div className='wrapper__container_wr__sub_wrap__sub_tap'>
             <a href='/'>ABOUT</a>
             <a href='/'>CONTACT</a>
@@ -15,15 +24,14 @@ const company = () => {
               <div className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__com_sec_parah'>
                 <p className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__com_sec_parah__big_p'>
                   <span className='color_mint'>
-                    음악, 영화, 드라마, 공연 등<b>엔터테인먼트</b>
+                    pop작업, 배너 작업 등<b>웹 디자인 전반적인 작업을 했습니다</b>
                   </span>
-                  의
+                  
                   <br />
-                  모든 영역으로의 사업 확장을 하고 있으며
+                  웹에서는 제가 생각하는 것 보다 더 자유로웠습니다.
                 </p>
-                <p>
-                  글로벌 시대에 발맞추어 해외 비즈니스 역량 강화로 콘텐츠 수출에
-                  앞장서고 있습니다.
+                <p className= 'wrapper__container_wr__sub_wrap__sub_container__sub_sec__pp'>
+                디자인을 하다가 html, css 등을 접하게 되었는데 거기서 신세계를 경험하게 되었습니다.
                 </p>
                 <div className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__com_sec_parah__com_sec_log'>
                   <img
@@ -32,26 +40,27 @@ const company = () => {
                   />
                 </div>
                 <p className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__com_sec_parah__wide_lh'>
-                  최고의 전문가들이 모여 풍부한 제작 및 관리 경험과 네트워크를
-                  이용,
+                 
+                  이 분야는 끝없이 발전하기 때문에 자기 공부를 게을리 하면 안됩니다.
                   <br />
                   <span className='color_black'>
-                    차별화되고 최고의 실력을 갖춘 아티스트 개발에 중점 및
-                    아시아를 넘어 세계를 아우를 수 있는 컨텐츠 개발에 매진
+                    웹 쪽은 아직도 발전하고 있고 아직도 수요가 여러 분야에 발생하고 있고
+                     
                   </span>
-                  하고 있습니다.
+                  끝없이 개발하고 발전해야 합니다.
                   <br />
-                  마루기획 주식회사는
+                 저는 
                   <b className='color_mint'>
-                    뉴미디어를 선두 할 수 있는 초일류 종합 엔터테인먼트사를 지향
+                    
+공부하면 할 수록 배울게 많아지지만 늘 최선을  
                   </b>
-                  합니다.
+                  다 하고 있습니다.
                 </p>
               </div>
             </div>
             <div className='wrapper__container_wr__sub_wrap__sub_container__sub_sec'>
               <div className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__title'>
-                <h3>주요 산업 분야</h3>
+                <h3>About Me</h3>
               </div>
               <div className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__com_circle_wrap'>
                 <div className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__com_circle_wrap__com_circle com_circle01'>
@@ -62,9 +71,11 @@ const company = () => {
                   />
                   <div className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__com_circle_wrap__com_circle__txt_area'>
                     <p>
-                      음반 제작 및 온라인
+                      책임감과 성실성
                       <br />
-                      오프라인 음반 유통, 투자
+                      하는 일은 끝까지 하려고 하고
+                      <br />
+                        그것이 결과로써 이어질 수 있게 합니다.
                     </p>
                   </div>
                 </div>
@@ -73,12 +84,14 @@ const company = () => {
                     className='icon_area'
                     src='http://maroocorp.co.kr/theme/basic/img/newbird/sub/about_icon02.png'
                     alt=''
-                  />
+                  /> 
                   <div className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__com_circle_wrap__com_circle__txt_area'>
                     <p>
-                      스타 매니지먼트 및
+                      언제나 도전
                       <br />
-                      스타 마케팅
+                     모르는 것에 두려워 하지 않고 
+                      <br />
+                      욕심 있게 새로운것을 탐합니다
                     </p>
                   </div>
                 </div>
@@ -90,9 +103,11 @@ const company = () => {
                   />
                   <div className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__com_circle_wrap__com_circle__txt_area'>
                     <p>
-                      영화, 드라마 제작 및
+                      소확행
                       <br />
-                      투자
+                      작은 성취감도 가볍게 여기지 않고
+                      <br />
+                        큰 일을 위한 버팀목으로 삼습니다.
                     </p>
                   </div>
                 </div>
@@ -101,8 +116,9 @@ const company = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+      </>
   );
 };
 
-export default company;
+export default Company;

@@ -1,0 +1,35 @@
+
+
+@media only screen and(max-width: 1300px){
+    .view{
+        width:100%; padding: 150px 15px 40px 15px;
+              &__container{
+                     width: 100%;
+              }
+              &__wrap{
+                padding-bottom: 60px
+              }
+              &__top {
+                height:300px;
+                   p{
+                    padding-left: 270px 
+                   }
+              }
+              &__bottom{
+                padding: 0 30px;
+                    &__circle_img{
+                        left:40px
+                     }
+              }
+              &__field{
+                padding: 0 0 0 20px 
+              }
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 1023px) {
+    
+}

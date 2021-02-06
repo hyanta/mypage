@@ -4,6 +4,7 @@ import { Container } from "../../globalStyles";
 import {Link} from 'react-scroll'
 
 export const Nav = styled.nav`
+
   background: rgba(77,58,62, 0.9);
   height: 70px;
   display: flex;
@@ -25,7 +26,13 @@ export const NavbarContainer = styled(Container)`
   justify-content: space-between;
   height: 70px;
 
+ @media screen and (max-width: 960px) {
+    padding:0px;
+  }
+
   ${Container}
+ 
+  
 `;
 
 export const NavMenu = styled.ul`
@@ -52,9 +59,14 @@ export const NavMenu = styled.ul`
     opacity: 1;
     transition: all 0.5s ease;
     background: #101522;
-
+    
     padding-right: 50px;
     padding-left: 50px;
+  }
+
+  @media screen and (max-width: 765px){
+    padding:0 0;
+    
   }
 `;
 
@@ -78,6 +90,11 @@ export const NavItem = styled.li`
       border-bottom: 0px;
     }
   }
+  @media screen and (max-width: 765px){
+    padding:0;
+
+  }
+
 `;
 
 export const NavLinks = styled(Link)`
@@ -95,7 +112,7 @@ export const NavLinks = styled(Link)`
   &:hover {
     color: #fff2d0;
     transition: all 0.3s ease;
-   
+  
   }
 
   @media screen and (max-width: 960px) {
@@ -103,7 +120,8 @@ export const NavLinks = styled(Link)`
     justify-content: center;
     width: 100%;
     display: flex;
-
+    font-size: 14px;
+    padding:0px;
     &:hover {
       color: #fff;
       transition: all 0.3s ease;

@@ -2,13 +2,22 @@ import React, { useState } from "react";
 import { viewImage } from "../../pages/HomePage/Data";
 import arrowies from "./ViewData";
 import "./ViewContainer.scss";
+import './ViewContainerMedia.scss'
 import Arrows from "./Arrows";
 import "../../images/bigBanner01.jpg";
 import "../../images/bigBanner02.jpg";
 import "../../images/bigBanner03.jpg";
 import "../../images/bigBanner04.jpg";
+
+ 
+import Modal from "./container/Modal";
 const ViewContainer = (props) => {
   const [toggleState, setToggleState] = useState(1);
+  const [showModal, setShowModal] = useState(false)
+
+  const openModal = () => {
+    setShowModal(prev => !prev)
+  }
 
   const ToggleTap = (index) => {
     setToggleState(index);
@@ -133,7 +142,7 @@ const ViewContainer = (props) => {
                   }
                 >
                   <h3 className='view__field__tap_pc__profile__section__section_title'>
-                    ABOUT
+                    PICTURE
                   </h3>
                   <div
                     className={
@@ -143,10 +152,13 @@ const ViewContainer = (props) => {
                     }
                   >
                     <img
+                      
+                      onClick={openModal}
                       src={slide.img1}
                       alt='none'
                       className='view__field__tap_pc__profile__section__con_box__p'
                     />
+                    {/* <Modal showModal={showModal} setShowModal={setShowModal} /> */}
                     <img
                       src={slide.img2}
                       alt='none'

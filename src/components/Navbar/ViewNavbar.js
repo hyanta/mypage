@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import {   } from "react-scroll";
 import "./ViewNavbar.scss";
+import { Link  } from "react-router-dom";
 
 const ViewNavbar = () => {
   const [background, setScrollNav] = useState();
@@ -27,7 +28,7 @@ const ViewNavbar = () => {
       <h1 className='hd__h1'>ARTIST</h1>
       <div className='hd__wrapper'>
         <div className='hd__wrapper__logo'>
-          <a href='/'>
+          <a href='/view'>
             <img
               src='http://maroocorp.co.kr/theme/basic/img/newbird/h_logo.png'
               alt='이미지없음'
@@ -40,37 +41,38 @@ const ViewNavbar = () => {
               <Link
                 className={toggleState === 1 ? "on" : ""}
                 onClick={() => toggleTab(1)}
-                href='/view'
+                to='/view/company'
               >
                 COMPANY
               </Link>
             </li>
             <li>
-              <Link
+              <a
+                href='view'
                 className={toggleState === 2 ? "on" : ""}
                 onClick={() => toggleTab(2)}
-                href='/view'
+               
               >
                 ARTIST
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 className={toggleState === 3 ? "on" : ""}
                 onClick={() => toggleTab(3)}
                 href='/view'
               >
                 NEWS&NOTICE
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
+              <a
                 className={toggleState === 4 ? "on" : ""}
                 onClick={() => toggleTab(4)}
                 href='/view'
               >
                 AUDITION
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

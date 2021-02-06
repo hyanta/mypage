@@ -22,9 +22,11 @@ export const Container = styled.div`
   padding-left: 50px;
 
   @media screen and (max-width: 960px) {
-    padding-right: 0px;
-    padding-left: 0px;
-    
+     /* padding-right:-50px; */
+  }
+
+  @media screen and (max-width: 765px) {
+     /* padding-right:-50px; */
   }
 `;
 
@@ -50,6 +52,11 @@ export const Button = styled.button`
 
   @media screen and (max-width: 960px) {
     width: 100%;
+  }
+  @media screen and (max-width: 780px) {
+    width: 100%;
+     
+    padding: 30px 20px;
   }
 `;
 

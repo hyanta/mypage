@@ -57,7 +57,7 @@ export const Img = styled.img`
 
 `;
 
-export const LinkWrap = styled(Link)`
+export const LinkWrap = styled(Link )`
  text-align: center;
    list-style: none;
 text-decoration: none;

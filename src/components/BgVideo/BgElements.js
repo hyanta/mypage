@@ -15,6 +15,9 @@ export const BgVideo = styled.div`
     left: 0;
     z-index: -1;
     background-color:rgba(47,42,36);
+          @media screen and (max-width: 780px) {
+                  left:-700px;
+  }
 `
 export const Video = styled.video`
    

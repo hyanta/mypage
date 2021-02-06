@@ -57,13 +57,13 @@ const SecondInfo = ({
           </InfoColumnTwo>
           <InfoColumnTwo>
             <TextWrapper>
-              <Heading  fontsize>
+              <Heading  className='headtitle2'  fontsize>
                 {headtitle2}
               </Heading>
-              <TopLine  middlesize height>
+              <TopLine  className='secondLine'  middlesize height>
                 {secondLine}
               </TopLine>
-              <Subtitle smallsize >
+              <Subtitle className='subtitle2' smallsize >
                 {subTitle2}
               </Subtitle>
             </TextWrapper>
