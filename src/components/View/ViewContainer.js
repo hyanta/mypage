@@ -119,6 +119,9 @@ const ViewContainer = (props) => {
             </div>
           </div>
           <div className='view__field'>
+         
+
+
             {/* 이름 정보란 */}
             <div className='view__field__top_info'>
               <div className='view__field__top_info__dob'>
@@ -133,6 +136,28 @@ const ViewContainer = (props) => {
             </div>
             <div className='view__field__tap_pc'>
               <div className='view__field__tap_pc__profile'>
+
+
+         {/* 모바일 텝 */}
+   <div className='view__field__view_tabs2'>
+              <ul className='view__field__view_tabs2__slider-nav'>
+                <div className='view__field__view_tabs2__slider-nav__slick-list'>
+                  <div className='view__field__view_tabs2__slider-nav__slick-list__slick-track'>
+                    <li className='view__field__view_tabs2__slider-nav__slick-list__slick-track__slick-slide'>
+                      <a href='/'>profile</a>
+                    </li>
+                    <li className='view__field__view_tabs2__slider-nav__slick-list__slick-track__slick-slide'>
+                      <a href='/'>profile</a>
+                    </li>
+                    <li className='view__field__view_tabs2__slider-nav__slick-list__slick-track__slick-slide'>
+                      <a href='/'>profile</a>
+                     </li>
+                  </div>
+                </div>
+                </ul>
+
+            </div>
+
                 {/* ABOUT 토글 */}
                 <div
                   className={
@@ -338,6 +363,8 @@ const ViewContainer = (props) => {
           </div>
         </div>
       </div>
+
+
     </div>
   ));
 };

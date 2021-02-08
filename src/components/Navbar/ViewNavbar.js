@@ -2,10 +2,14 @@ import React, { useState, useEffect } from "react";
 import {   } from "react-scroll";
 import "./ViewNavbar.scss";
 import { Link  } from "react-router-dom";
+import './ViewNavbarMedia.scss';
 
 const ViewNavbar = () => {
   const [background, setScrollNav] = useState();
   const [toggleState, setToggleState] = useState(1);
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click)
 
   const toggleTab = (index) => {
     setToggleState(index);
@@ -104,6 +108,28 @@ const ViewNavbar = () => {
             </li>
           </ul>
         </div>
+        <a onClick={handleClick}  href='#/' className= { click ? 'hd__wrapper__mo_navi_open  cross': 'hd__wrapper__mo_navi_open' } >
+          <span className='hd__wrapper__mo_navi_open__first'></span>
+          <span className='hd__wrapper__mo_navi_open__second'></span>
+          <span className='hd__wrapper__mo_navi_open__third'></span>
+        </a>
+      </div>
+      <div   className= { click ? 'm_navi_wrap move' :  'm_navi_wrap' }   >
+        <ul>
+          <li>
+            <a href='/'>COMPANY</a>
+          </li>
+          <li>
+            <a href='/'>COMPANY</a>
+          </li>
+          <li>
+            <a href='/'>COMPANY</a>
+          </li>
+          <li>
+            <a href='/'>COMPANY</a>
+          </li>
+          
+          </ul>
       </div>
     </div>
   );

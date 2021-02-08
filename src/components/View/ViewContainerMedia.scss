@@ -1,3 +1,13 @@
+ 
+@media only screen and(min-width: 1024px){
+    .view{
+      &__field{
+        &__view_tabs2{
+          display: none;
+        }
+      }
+    }
+}
 
 
 @media only screen and(max-width: 1300px){
@@ -22,8 +32,13 @@
                      }
               }
               &__field{
-                padding: 0 0 0 20px 
+                padding: 0 0 0 20px;
+                    &__view_tabs2{
+                  display: none;
+                }
+              
               }
+           
     }
     
 }
@@ -31,5 +46,80 @@
 
 
 @media only screen and (max-width: 1023px) {
-    
+     .view{
+      padding: 80px 0 0 0;
+          &__container{
+            border-radius:0; box-shadow:none;
+          }
+          &__top{
+            &__button_wrap{
+                width:100%; padding: 0 20px;
+                height: 40px;
+                &__view_prev,
+                &__view_next{
+                  background-size: 40px auto;
+                  font-size: 11px;
+                }
+            }
+            p{ display: none;}
+          }
+          &__bottom{
+            padding: 100px 20px 20px 20px;
+
+            &__circle_img{
+              left:50%; transform:translateX(-50%)
+            }
+            &__wrap{
+              display:none;
+            }
+          }
+          &__field{
+            float:none; width:100%; padding:0;
+              &__tap_pc{
+                &__profile{
+                    padding-top:0;
+                }
+              }
+              &__top_info{
+                height:auto;
+                  &__dob{
+                    float: none;
+                    width: 100%;
+                    margin: 0 auto;  text-align:center;
+                        p{
+                           
+                        }
+                  }
+              }
+
+              &__view_tabs2{
+                width:100%; margin: 30px 0 ; 
+                 &__slider-nav{
+                   border-top: 1px solid #efefef;
+                  border-bottom: 1px solid #efefef;
+                  
+                    &__slick-list{
+                     
+                        &__slick-track{
+                          opacity: 1;
+                          width: 100%;
+                          display: flex;
+                          transform: translate3d(0px, 0px, 0px);
+                             li{
+                              width: 293px;
+                               
+                              text-align: center;
+                              padding: 10px 0;
+                                a{
+                                  color: #000;
+                                  text-decoration: none;
+                                }
+                               
+                             }
+                        }
+                    }
+                 }
+              }
+          } 
+     }
 }
