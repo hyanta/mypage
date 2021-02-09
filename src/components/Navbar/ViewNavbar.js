@@ -3,21 +3,22 @@ import {   } from "react-scroll";
 import "./ViewNavbar.scss";
 import { Link  } from "react-router-dom";
 import './ViewNavbarMedia.scss';
+import * as AiIcons from "react-icons/ai";
 
-const ViewNavbar = () => {
+const ViewNavbar = ({logo,nav1,nav2,nav3,nav4}) => {
   const [background, setScrollNav] = useState();
   const [toggleState, setToggleState] = useState(1);
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click)
 
-  const toggleTab = (index) => {
+  const toggleTab = (index ) => {
     setToggleState(index);
   };
 
   const changeNav = () => {
     if (window.scrollY >= 90) {
-      setScrollNav("#aacfd8");
+      setScrollNav("#fedaca");
     } else {
       setScrollNav("");
     }
@@ -34,7 +35,7 @@ const ViewNavbar = () => {
         <div className='hd__wrapper__logo'>
           <a href='/view'>
             <img
-              src='http://maroocorp.co.kr/theme/basic/img/newbird/h_logo.png'
+              src={logo}
               alt='이미지없음'
             />
           </a>
@@ -47,7 +48,7 @@ const ViewNavbar = () => {
                 onClick={() => toggleTab(1)}
                 to='/view/company'
               >
-                COMPANY
+                {nav1}
               </Link>
             </li>
             <li>
@@ -57,7 +58,7 @@ const ViewNavbar = () => {
                 onClick={() => toggleTab(2)}
                
               >
-                ARTIST
+                {nav2}
               </a>
             </li>
             <li>
@@ -66,7 +67,7 @@ const ViewNavbar = () => {
                 onClick={() => toggleTab(3)}
                 href='/view'
               >
-                NEWS&NOTICE
+                {nav3}
               </a>
             </li>
             <li>
@@ -75,7 +76,7 @@ const ViewNavbar = () => {
                 onClick={() => toggleTab(4)}
                 href='/view'
               >
-                AUDITION
+                {nav4}
               </a>
             </li>
           </ul>
@@ -83,27 +84,18 @@ const ViewNavbar = () => {
         <div className='hd__wrapper__navi_right'>
           <ul>
             <li>
-              <a href='/'>
-                <img
-                  src='http://maroocorp.co.kr/theme/basic/img/newbird/email_icon.png'
-                  alt='Email'
-                />
+              <a href='/view'>
+              <AiIcons.AiOutlineHome />
               </a>
             </li>
             <li>
-              <a href='/'>
-                <img
-                  src='http://maroocorp.co.kr/theme/basic/img/newbird/email_icon.png'
-                  alt='map'
-                />
+              <a href='/view'>
+              <AiIcons.AiFillGithub />
               </a>
             </li>
             <li className='sch_open'>
-              <a href='/'>
-                <img
-                  src='http://maroocorp.co.kr/theme/basic/img/newbird/email_icon.png'
-                  alt='serach'
-                />
+              <a href='/view'>
+              <AiIcons.AiFillHeart />
               </a>
             </li>
           </ul>
@@ -117,16 +109,16 @@ const ViewNavbar = () => {
       <div   className= { click ? 'm_navi_wrap move' :  'm_navi_wrap' }   >
         <ul>
           <li>
-            <a href='/'>COMPANY</a>
+            <a href='/view/company'>{nav1}</a>
           </li>
           <li>
-            <a href='/'>COMPANY</a>
+            <a href='/view'>{nav2}</a>
           </li>
           <li>
-            <a href='/'>COMPANY</a>
+            <a href='/view'>{nav3}</a>
           </li>
           <li>
-            <a href='/'>COMPANY</a>
+            <a href='/view'>{nav4}</a>
           </li>
           
           </ul>

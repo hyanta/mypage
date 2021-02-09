@@ -84,9 +84,8 @@ const arrowies = [
   },
   ];
   
- 
-export default arrowies
 
+export default arrowies
 
 
 

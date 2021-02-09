@@ -16,7 +16,7 @@ export const ImgStart = styled.img`
 
 `
 
-export const SideLink = styled(Link)`
+export const SideLink = styled(Link )`
   list-style: none;
   text-decoration: none;
   color:white;
@@ -101,5 +101,6 @@ export const BottomWrapper = styled.div`
 
 export const Img2 = styled.img`
    border-radius: 5px;
+    border: 1.5px solid rgba(169,169,169);
 `
 

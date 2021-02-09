@@ -18,10 +18,10 @@ const Footer = () => {
               </ImgWrapper>
 
         <FooterSubHeading>
-          © 2021 jjjjj Korea Corporation All Rights Reserved.
+          © 2021 HYANTA Korea Person All Rights Reserved.
         </FooterSubHeading>
         <FooterSubText>
-          All rights reserved by Dr. Ing. h.c. F. Porsche AG
+          All rights reserved by JHO
         </FooterSubText>
       </FooterSubscription>
     </FooterContainer>

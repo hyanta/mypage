@@ -47,7 +47,7 @@
     }
         &__button_wrap{
           width: 100%;
-          height: 60px;
+           
           position: absolute;
           top: 50%;
           left: 0;
@@ -57,24 +57,26 @@
           justify-content: space-between;
           flex-direction: row;
           display: flex;
+          font-size: 50px;
+          color: aliceblue;
                 &__view_prev{
-                  background: url(http://maroocorp.co.kr/theme/basic/img/newbird/sub/view_prev.png);
-                  background-size: 60px auto; 
+                   
+                  
                   cursor: pointer;
-                  color: transparent;
+                   
                 }
                 &__view_next{
-                  background: url(http://maroocorp.co.kr/theme/basic/img/newbird/sub/view_next.png);
-                  background-size: 60px auto; 
+                  
+                  
                   cursor: pointer;
-                  color: transparent;
+                  
                 }
-               a{
-                width: 60px;
-                height: 60px;
-                line-height: 60px;
-                font-size: 0;
-               }
+              //  a{
+              //   width: 60px;
+              //   height: 60px;
+              //   line-height: 60px;
+              //   font-size: 0;
+              //  }
         }     
 
     p {

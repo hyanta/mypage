@@ -43,40 +43,41 @@ export const homeObjThree = {
   smalltext2: "REACT JS",
   smalltext3: "FIGMA",
   smalltext4: "MONGO DB",
-  linetext: "text",
-  linetext2: "dlskd",
-  linetext3: "aadad",
-  linetext4: "ttetyy",
+  linetext: "NODE JS",
+  linetext2: "REACT",
+  linetext3: "FIGMA",
+  linetext4: "MONGO DB",
 };
 
 export const SidebarName = {
   img1A: require("../../images/sm01.jpg").default,
   img1B: require("../../images/sm02.jpg").default,
-  img1C: require("../../images/sm01.jpg").default,
+  img1C: require("../../images/sm03.jpg").default,
   alt: "nopic",
   img2: require("../../images/bm01.jpg").default,
+  img4: require("../../images/bm02.jpg").default,
   img3: require("../../images/logo.png").default,
 };
 
 const sliderImage = [
   {
-    title: "First Slide",
-    description: "This is the First Slider of our Carousel",
+    title: "Styled-components",
+    description: "반응형으로 만들어진 웹용 기본 디자인 입니다",
     img: require("../../images/sample.jpg").default,
   },
   {
-    title: "Second Slide",
-    description: "This is the Second Slider of our Carousel",
+    title: "ProShop",
+    description: "CRUD가 가능하고 NODE JS를 활용한 쇼핑몰입니다",
     img: require("../../images/sample2.jpg").default,
   },
   {
-    title: "Third Slide",
-    description: "This is the Third Slider of our Carousel",
+    title: "Profolio",
+    description: "디자인 작업물을 모아 놓은 사이트 입니다",
     img: require("../../images/sample3.jpg").default,
   },
   {
-    title: "Fourth Slide",
-    description: "This is the Fourth Slider of our Carousel",
+    title: "소셜페이지",
+    description: "Firebase를 활용한 앱 입니다",
     img: require("../../images/sample4.jpg").default,
   },
 ];

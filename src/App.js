@@ -2,10 +2,11 @@
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom' 
 import Home from './pages/HomePage/Home';
-import { Footer } from './components';
+import { Footer, Sidebar } from './components';
 import Phome from './pages/HomePage/Phome';
 import Viewmain from './components/View/Viewmain';
 import Company from './components/View/container/Company';
+import { SidebarName } from './pages/HomePage/Data';
  
  
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <Router>
        
-    
+       <Sidebar {...SidebarName} />
       
       <Switch>
         

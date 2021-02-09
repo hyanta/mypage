@@ -4,6 +4,7 @@ import styled from "styled-components";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { SideItem, SideLink, Nav, ImgWrapper, Img, LinkWrap, Util, Down, IcoWrapper, BottomLink, BottomWrapper, Img2, ImgStart,} from './Sidebar.elements'
+import Home from "../../pages/HomePage/Home";
  
 const NavIcon = styled(Link)`
   position: absolute;
@@ -52,7 +53,7 @@ const Bgblack = styled.span`
 
 
 
-const Sidebar = ({alt,img2,img3,img1A,img1B,img1C}) => {
+const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4}) => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -77,8 +78,8 @@ const Sidebar = ({alt,img2,img3,img1A,img1B,img1C}) => {
         <SidebarWrap>
           
           <SideItem>
-            <ImgStart src={img3} alt={alt}/>
-            <SideLink> 다른 사이트 바로가기▶ </SideLink>
+            <ImgStart  src={img3} alt={alt}/>
+            <SideLink to='/'>  메인으로 가기▶ </SideLink>
 
             </SideItem>
          <Nav>
@@ -126,7 +127,7 @@ const Sidebar = ({alt,img2,img3,img1A,img1B,img1C}) => {
                 </ImgWrapper>
                 <ImgWrapper>
                   <LinkWrap>
-                    <Img2  src={img2} alt=''/>
+                    <Img2  src={img4} alt=''/>
                     </LinkWrap>
                 </ImgWrapper>
               

@@ -8,7 +8,7 @@ import "../../images/bigBanner01.jpg";
 import "../../images/bigBanner02.jpg";
 import "../../images/bigBanner03.jpg";
 import "../../images/bigBanner04.jpg";
-
+import * as FiIcons from "react-icons/fi";
  
 import Modal from "./container/Modal";
 const ViewContainer = (props) => {
@@ -75,13 +75,13 @@ const ViewContainer = (props) => {
               onClick={props.prevSlide}
               className='view__top__button_wrap__view_prev'
             >
-              이전포폴
+              <FiIcons.FiArrowLeftCircle />
             </span>
             <span
               onClick={props.nextSlide}
               className='view__top__button_wrap__view_next'
             >
-              다음포폴
+             <FiIcons.FiArrowRightCircle />
             </span>
           </div>
         </div>

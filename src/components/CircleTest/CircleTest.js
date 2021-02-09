@@ -124,7 +124,7 @@ const CircleTest = ({ img1,smalltext,linetext }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 1780) {
+    if (window.scrollY >= 1600) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
