@@ -34,10 +34,10 @@ const Company = () => {
                 디자인을 하다가 html, css 등을 접하게 되었는데 거기서 신세계를 경험하게 되었습니다.
                 </p>
                 <div className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__com_sec_parah__com_sec_log'>
-                  <img
+                  {/* <img
                     src='http://maroocorp.co.kr/theme/basic/img/newbird/sub/about_logo.png'
                     alt='로고이미지'
-                  />
+                  /> */}
                 </div>
                 <p className='wrapper__container_wr__sub_wrap__sub_container__sub_sec__com_sec_parah__wide_lh'>
                  

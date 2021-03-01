@@ -56,6 +56,7 @@ const SecondInfo = ({
             </ImgWrapper>
           </InfoColumnTwo>
           <InfoColumnTwo>
+            
             <TextWrapper>
               <Heading  className='headtitle2'  fontsize>
                 {headtitle2}

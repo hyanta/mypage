@@ -65,7 +65,7 @@ const ViewNavbar = ({logo,nav1,nav2,nav3,nav4}) => {
               <a
                 className={toggleState === 3 ? "on" : ""}
                 onClick={() => toggleTab(3)}
-                href='/view'
+                href='/'
               >
                 {nav3}
               </a>
@@ -115,7 +115,7 @@ const ViewNavbar = ({logo,nav1,nav2,nav3,nav4}) => {
             <a href='/view'>{nav2}</a>
           </li>
           <li>
-            <a href='/view'>{nav3}</a>
+            <a href='/'>{nav3}</a>
           </li>
           <li>
             <a href='/view'>{nav4}</a>

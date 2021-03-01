@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import { ViewContainer } from '../../components'
 import { viewImage } from './Data'
 import arrowies from "../../components/View/ViewData";
+import ImageGrid from '../../components/View/container/ImageGrid';
  
  
 
@@ -28,7 +29,7 @@ const Phome = () => {
                   }
                 {...viewImage} />
             
-           
+
       </>
       
     )

@@ -16,7 +16,7 @@ const Viewmain = () => {
 
                    <Route path='/view' exact  component={Phome} />
                    <Route path='/view/company' component={Company} />
-              
+                    
               
             </Switch>
         </Router>

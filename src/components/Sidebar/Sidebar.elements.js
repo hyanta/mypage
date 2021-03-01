@@ -39,7 +39,19 @@ export const ImgWrapper = styled.ul`
   width: 100%;
 display:flex;
 justify-content:center;
-
+     a{
+      text-align: center;
+   list-style: none;
+text-decoration: none;
+    width: 160px;
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    margin-bottom: 15px;
+   color:#a9a9a9;
+   font-weight: 500;
+   font-size: 16px;
+     }
   /* background-color: #444; */
    
   

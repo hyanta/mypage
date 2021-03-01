@@ -1,29 +1,26 @@
-import React from "react";
-import arrowies from "../ViewData";
+import React from 'react'
+import { motion } from 'framer-motion'
 
-const Modal = ({ showModal, setShowModal,toggleState,props} ) => {
-  return arrowies.map((slide, index) => (
+const Modal = ({ selectedImg, setSelectedImg }) => {
     
-      showModal ? (
-          
-          <div key={index}>
-      <div className='background__modal_wrapper' showModal={showModal}>
-        <img src={slide.img1} className='background__modal_wrapper__image' alt='no' />
-        <div
-          onClick={() => setShowModal((prev) => !prev)}
-          className='modalcontent'
+    const handleClick = (e) => {
+        if (e.target.classList.contains('backdrop')) {
+             setSelectedImg(null)
+        }
+       
+    }
+
+    return (
+        <motion.div className='backdrop' onClick={handleClick}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
         >
-          <h1>modal</h1>
-        </div>
-      </div>
-      </div>
-      
-      
-      ) : null
-      
-    
+            <motion.img src={selectedImg} alt='enlarged pic'
+                initial={{ y: '-100vh' }}
+                animate={{y: 0}}
+            />
+        </motion.div>
+    )
+}
 
-  ));
-};
-
-export default Modal;
+export default Modal

@@ -26,7 +26,7 @@ export const homeObjTwo = {
     "평범한 웹디자이너에서 코드도 쓸 줄 아는 디자이너로 거듭나다 ",
   headtitle2: "코딩의 시대+ 웹디자인",
   subTitle2:
-    "피부가 끓는 뭇 불어 동력은 같이, 피는 스며들어 봄바람이다. 얼음 할지니, 뛰노는 가장 밥을 것이다. 방황하여도, 청춘의 반짝이는 투명하되 보내는 힘있다. 힘차게 때에, 돋고, 끓는 크고 이것을 관현악이며, 무엇을 들어 그리하였는가?",
+    "코딩 분야는 끝없이 발전하기 때문에 자기 공부를 게을리 하면 안됩니다. 웹 쪽은 아직도 발전하고 있고 아직도 수요가 여러 분야에 발생하고 있어끝없이 개발하고 발전해야 합니다. 공부하면 할 수록 배울게 많아지지만 늘 최선을다 하고 있습니다.",
 };
 
 export const homeObjThree = {
@@ -57,6 +57,9 @@ export const SidebarName = {
   img2: require("../../images/bm01.jpg").default,
   img4: require("../../images/bm02.jpg").default,
   img3: require("../../images/logo.png").default,
+  link0: 'https://proshopapp2a.herokuapp.com/',
+  link1: 'https://styled-1341.firebaseapp.com/',
+
 };
 
 const sliderImage = [

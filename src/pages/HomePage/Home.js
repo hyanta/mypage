@@ -6,7 +6,7 @@ import { homeObjOne, homeObjTwo, homeObjThree, SidebarName } from "./Data";
 const Home = () => {
   return (
     <>
-      {/* <Sidebar {...SidebarName} /> */}
+      <Sidebar {...SidebarName} />
       <Bg />
       <Navbar />
       <InfoSection  {...homeObjOne} />

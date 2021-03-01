@@ -53,8 +53,8 @@ const Bgblack = styled.span`
 
 
 
-const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4}) => {
-  const [sidebar, setSidebar] = useState(false);
+const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4,link1,link0}) => {
+  const [sidebar, setSidebar] = useState(true);
 
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -67,7 +67,7 @@ const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4}) => {
             
                       <>
                           <AiIcons.AiOutlineClose onClick={showSidebar} />
-                          <Bgblack></Bgblack>
+                          <Bgblack onClick={showSidebar}></Bgblack>
                           </>
           ) : (              
                           <FaIcons.FaBars onClick={showSidebar} />
@@ -84,19 +84,21 @@ const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4}) => {
             </SideItem>
          <Nav>
             <ImgWrapper  >
-              <LinkWrap>
+              <a href={link0} >
                 <Img src={img1A} alt={alt} />
                 <p>PRO SHOP</p>
-                </LinkWrap>
+                </a>
                 </ImgWrapper  >
                 <ImgWrapper  >
-              <LinkWrap>
+              
+                <a href={link1}>
                 <Img src={img1B} alt={alt} />
-                <p>Styled-Components</p>
-                </LinkWrap>
+                  <p>Styled-Components</p>
+                  </a>
+                
             </ImgWrapper  >
             <ImgWrapper  >
-              <LinkWrap to='/view'>
+              <LinkWrap to={'/view'}>
                 <Img src={img1C} alt={alt} />
                 <p>Design-Portfolio</p>
                 </LinkWrap>

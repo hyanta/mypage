@@ -97,6 +97,7 @@ export const TopLine = styled.div`
 `;
 
 export const Heading = styled.h1`
+
   margin-bottom: 18px;
   font-size: ${({ fontsize }) => (fontsize ? "40px " : "80px")};
   line-height: 1.1;
@@ -104,6 +105,7 @@ export const Heading = styled.h1`
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "rgba(196,151,112)")};
 
   @media screen and (max-width: 768px) {
+    text-align: left;
      font-size: 60px;
          
         
@@ -127,6 +129,7 @@ export const ImgWrapper = styled.div`
   max-width: 555px;
   display: flex;
   justify-content: ${({ start }) => (start ? "flex-start" : "flex-end")};
+  
 `;
 
 export const Img = styled.img`

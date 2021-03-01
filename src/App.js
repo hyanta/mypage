@@ -14,13 +14,13 @@ function App() {
   return (
     <Router>
        
-       <Sidebar {...SidebarName} />
+     
       
       <Switch>
         
          <Route path='/' exact component={Home} />
          <Route path='/view' component={Viewmain} />
-         
+          
       </Switch>
   
       <Footer/>
