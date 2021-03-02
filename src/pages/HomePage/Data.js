@@ -19,7 +19,7 @@ export const homeObjTwo = {
   topLine: "이런것들을 만들었어요",
   headline: "아는것",
   Subtitle: "여기에 무엇을 적으면 좋을까요",
-  description: "자세한 설명을 넣어 주세요",
+  description: "열심히 만들었습니다. 봐 주셔서 감사합니다!",
   img: require("../../images/logo.jpg").default,
   alt: "Nologo",
   secondLine:
@@ -59,7 +59,10 @@ export const SidebarName = {
   img3: require("../../images/logo.png").default,
   link0: 'https://proshopapp2a.herokuapp.com/',
   link1: 'https://styled-1341.firebaseapp.com/',
-
+  link5: 'https://github.com/hyanta/mypage',
+  speechText01: '간단히 쇼핑몰을 만들어 보았습니다.',
+  speechText02: '기초 반응형 웹사이트 입니다.',
+  speechText03: '전 회사 디자인 작업을 모아 놓았습니다.',
 };
 
 const sliderImage = [

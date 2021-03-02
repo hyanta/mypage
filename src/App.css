@@ -11,3 +11,12 @@
   display: none;
 }
 
+.bottomlink {
+  font-size: 35px;
+ margin:7px;
+ color:#a9a9a9;
+  }
+
+  .bottomlink:hover {
+    color:#f4f4f4;
+  }

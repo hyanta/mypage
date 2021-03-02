@@ -23,7 +23,7 @@ const ThirdInfo = ({ img1, img2, img3, img4, smalltext, smalltext2,smalltext3,sm
            
               <p>원하는 일을 찾다</p>
               <p>FULL STACK</p>
-              <p>피부가 끓는 뭇 불어 동력은 같이, 피는 스며들어 봄바람이다. 얼음 할지니, 뛰노는 가장 밥을 것이다.</p>
+              <p>어떻게 하면 디자인을 더 잘할까 고민을 많이 했습니다. <br/>고민하다 보니 어느덧 여기까지 오게 되었습니다.</p>
             
             <CircleColumn>
                 <CircleTest img1={img1} smalltext={smalltext} linetext={ linetext}/> <CircleTest img1={img2} smalltext={ smalltext2 } linetext={ linetext2}/> <CircleTest img1={img3} smalltext={ smalltext3 } linetext={ linetext3}/> <CircleTest img1={img4} smalltext={ smalltext4 } linetext={ linetext4}/>

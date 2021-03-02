@@ -33,7 +33,7 @@ export const InfoColumn = styled.div`
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     
   }
 `;
@@ -120,7 +120,7 @@ export const Subtitle = styled.p`
   lightTextDesc ? "#a9b3c1" : "rgba(176,123,79)"};
     @media screen and (max-width: 768px) {
      font-size: 20px;
-         
+         text-align:left
         
   }
 `;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
-import { SideItem, SideLink, Nav, ImgWrapper, Img, LinkWrap, Util, Down, IcoWrapper, BottomLink, BottomWrapper, Img2, ImgStart,} from './Sidebar.elements'
+import { SideItem, SideLink, Nav, ImgWrapper, Img, LinkWrap, Util, Down, IcoWrapper, BottomLink, BottomWrapper, Img2, ImgStart, SpeechBubble,} from './Sidebar.elements'
 import Home from "../../pages/HomePage/Home";
  
 const NavIcon = styled(Link)`
@@ -53,7 +53,7 @@ const Bgblack = styled.span`
 
 
 
-const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4,link1,link0}) => {
+const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4,link1,link0,link5,speechText01,speechText02,speechText03}) => {
   const [sidebar, setSidebar] = useState(true);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -82,15 +82,26 @@ const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4,link1,link0}) => {
             <SideLink to='/'>  메인으로 가기▶ </SideLink>
 
             </SideItem>
-         <Nav>
+          <Nav>
+          
             <ImgWrapper  >
+            <SpeechBubble>
+              <div>
+                <p>{speechText01}</p> 
+                </div>
+            </SpeechBubble>
               <a href={link0} >
                 <Img src={img1A} alt={alt} />
                 <p>PRO SHOP</p>
                 </a>
-                </ImgWrapper  >
+            </ImgWrapper  >
+               
                 <ImgWrapper  >
-              
+                <SpeechBubble>
+              <div>
+                <p>{speechText02}</p> 
+                </div>
+            </SpeechBubble>
                 <a href={link1}>
                 <Img src={img1B} alt={alt} />
                   <p>Styled-Components</p>
@@ -98,6 +109,11 @@ const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4,link1,link0}) => {
                 
             </ImgWrapper  >
             <ImgWrapper  >
+            <SpeechBubble>
+              <div>
+                <p>{speechText03}</p> 
+                </div>
+            </SpeechBubble>
               <LinkWrap to={'/view'}>
                 <Img src={img1C} alt={alt} />
                 <p>Design-Portfolio</p>
@@ -115,9 +131,13 @@ const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4,link1,link0}) => {
                   <AiIcons.AiOutlineYoutube />
                   
                   </BottomLink>
-                  <BottomLink>
-                  <AiIcons.AiFillGithub />
-                    </BottomLink>
+                
+                  <a className='bottomlink' href={link5} >
+                   
+                      <AiIcons.AiFillGithub />
+                   
+                    </a>
+                  
                </IcoWrapper>
               </Util>
               
