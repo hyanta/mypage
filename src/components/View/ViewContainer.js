@@ -11,18 +11,17 @@ import "../../images/bigBanner04.jpg";
 import * as FiIcons from "react-icons/fi";
 import ImageGrid from "./container/ImageGrid";
 import UploadForm from "./container/UploadForm";
-import UploadForm_detailed from "./container/UploadForm_detailed";
 import Modal from "./container/Modal";
 import ImageGridDetailed from "./container/ImageGridDetailed";
 import UploadFormBanner from "./container/UploadFormBanner";
 import ImageGridBanner from "./container/ImageGridBanner";
 import UploadFormBrand from "./container/UploadFormBrand";
 import ImageGridBrand from "./container/ImageGridBrand";
- 
+import UploadFormDetailed from "./container/UploadFormDetailed";
 
 const ViewContainer = (props) => {
   const [toggleState, setToggleState] = useState(1);
-  
+
   const [selectedImg, setSelectedImg] = useState(null);
 
   const ToggleTap = (index) => {
@@ -157,17 +156,23 @@ const ViewContainer = (props) => {
                   <h3 className='view__field__tap_pc__profile__section__section_title'>
                     PICTURE
                   </h3>
-                
-                  <div     className={
+
+                  <div
+                    className={
                       index === 0
                         ? "view__field__tap_pc__profile__section__con_box"
                         : "inactive"
-                    }> 
-                          {/* <UploadForm/> */}
-                          <ImageGrid  setSelectedImg={setSelectedImg}/>
-                          { selectedImg &&  <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />}
+                    }
+                  >
+                    {/* <UploadForm/> */}
+                    <ImageGrid setSelectedImg={setSelectedImg} />
+                    {selectedImg && (
+                      <Modal
+                        selectedImg={selectedImg}
+                        setSelectedImg={setSelectedImg}
+                      />
+                    )}
                   </div>
-               
 
                   <div
                     className={
@@ -176,9 +181,14 @@ const ViewContainer = (props) => {
                         : "inactive"
                     }
                   >
-                    {/* <UploadForm_detailed /> */}
+                    {/* <UploadFormDetailed /> */}
                     <ImageGridDetailed setSelectedImg={setSelectedImg} />
-                    { selectedImg &&  <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />}
+                    {selectedImg && (
+                      <Modal
+                        selectedImg={selectedImg}
+                        setSelectedImg={setSelectedImg}
+                      />
+                    )}
                   </div>
 
                   <div
@@ -189,8 +199,13 @@ const ViewContainer = (props) => {
                     }
                   >
                     {/* <UploadFormBanner  /> */}
-                    <ImageGridBanner setSelectedImg={setSelectedImg}/>
-                    { selectedImg &&  <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />}
+                    <ImageGridBanner setSelectedImg={setSelectedImg} />
+                    {selectedImg && (
+                      <Modal
+                        selectedImg={selectedImg}
+                        setSelectedImg={setSelectedImg}
+                      />
+                    )}
                   </div>
 
                   <div
@@ -202,7 +217,12 @@ const ViewContainer = (props) => {
                   >
                     {/* <UploadFormBrand /> */}
                     <ImageGridBrand setSelectedImg={setSelectedImg} />
-                    { selectedImg &&  <Modal selectedImg={selectedImg} setSelectedImg={setSelectedImg} />}
+                    {selectedImg && (
+                      <Modal
+                        selectedImg={selectedImg}
+                        setSelectedImg={setSelectedImg}
+                      />
+                    )}
                   </div>
                 </div>
               </div>
