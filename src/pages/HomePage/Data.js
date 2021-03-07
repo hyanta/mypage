@@ -22,8 +22,7 @@ export const homeObjTwo = {
   description: "열심히 만들었습니다. 봐 주셔서 감사합니다!",
   img: require("../../images/logo.jpg").default,
   alt: "Nologo",
-  secondLine:
-    "평범한 웹디자이너에서 코드도 쓸 줄 아는 디자이너로 거듭나다 ",
+  secondLine: "평범한 웹디자이너에서 코드도 쓸 줄 아는 디자이너로 거듭나다 ",
   headtitle2: "코딩의 시대+ 웹디자인",
   subTitle2:
     "코딩 분야는 끝없이 발전하기 때문에 자기 공부를 게을리 하면 안됩니다. 웹 쪽은 아직도 발전하고 있고 아직도 수요가 여러 분야에 발생하고 있어끝없이 개발하고 발전해야 합니다. 공부하면 할 수록 배울게 많아지지만 늘 최선을다 하고 있습니다.",
@@ -53,16 +52,21 @@ export const SidebarName = {
   img1A: require("../../images/sm01.jpg").default,
   img1B: require("../../images/sm02.jpg").default,
   img1C: require("../../images/sm03.jpg").default,
+  img1D: require("../../images/sm04.jpg").default,
   alt: "nopic",
   img2: require("../../images/bm01.jpg").default,
   img4: require("../../images/bm02.jpg").default,
   img3: require("../../images/logo.png").default,
-  link0: 'https://proshopapp2a.herokuapp.com/',
-  link1: 'https://styled-1341.firebaseapp.com/',
-  link5: 'https://github.com/hyanta/mypage',
-  speechText01: '간단히 쇼핑몰을 만들어 보았습니다.',
-  speechText02: '기초 반응형 웹사이트 입니다.',
-  speechText03: '전 회사 디자인 작업을 모아 놓았습니다.',
+
+  link0: "https://proshopapp2a.herokuapp.com/",
+  link1: "https://slack-clone-yt-3e1ad.web.app/",
+  link5: "https://github.com/hyanta/mypage",
+  link6: "https://netflix-clone-f2991.firebaseapp.com/",
+
+  speechText01: "간단히 쇼핑몰을 만들어 보았습니다.",
+  speechText02: "slack채팅 클론을 만들어 보았습니다.",
+  speechText03: "전 회사 디자인 작업을 모아 놓았습니다.",
+  speechText04: "Neflex 클론을 만들어 보았습니다.",
 };
 
 const sliderImage = [
@@ -110,5 +114,3 @@ export const viewImage = [
     img: require("../../images/picture01.jpg").default,
   },
 ];
-
- 

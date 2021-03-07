@@ -53,7 +53,7 @@ const Bgblack = styled.span`
 
 
 
-const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4,link1,link0,link5,speechText01,speechText02,speechText03}) => {
+const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img1D,img4,link1,link0,link5,link6,speechText01,speechText02,speechText03,speechText04}) => {
   const [sidebar, setSidebar] = useState(true);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -104,7 +104,7 @@ const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4,link1,link0,link5,speechT
             </SpeechBubble>
                 <a href={link1}>
                 <Img src={img1B} alt={alt} />
-                  <p>Styled-Components</p>
+                  <p>Slack Clone</p>
                   </a>
                 
             </ImgWrapper  >
@@ -118,7 +118,22 @@ const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4,link1,link0,link5,speechT
                 <Img src={img1C} alt={alt} />
                 <p>Design-Portfolio</p>
                 </LinkWrap>
-                </ImgWrapper  >
+            </ImgWrapper  >
+            
+            <ImgWrapper  >
+                <SpeechBubble>
+              <div>
+                <p>{speechText04}</p> 
+                </div>
+            </SpeechBubble>
+                <a href={link6}>
+                <Img src={img1D} alt={alt} />
+                  <p>Neflex Clone</p>
+                  </a>
+                
+            </ImgWrapper  >
+
+
           <BottomWrapper>
             <Util>
             <IcoWrapper>
@@ -126,11 +141,11 @@ const Sidebar = ({alt,img2,img3,img1A,img1B,img1C,img4,link1,link0,link5,speechT
                   <AiIcons.AiOutlineHome />
                    
                   </BottomLink>
-                  <BottomLink>
+                  {/* <BottomLink>
                   
                   <AiIcons.AiOutlineYoutube />
                   
-                  </BottomLink>
+                  </BottomLink> */}
                 
                   <a className='bottomlink' href={link5} >
                    
